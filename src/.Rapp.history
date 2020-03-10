@@ -1,0 +1,275 @@
+points(1:1686, df$count[df$package=="CARBayesST"], pch=19, col="blue")
+df <- cran_downloads(packages = c("CARBayes", "CARBayesST"), #
+                     from = "2016-01-01", to = "2017-08-13")
+head(df)
+tapply(df$count, df$package, sum)
+df <- cran_downloads(packages = c("CARBayes", "CARBayesST"), #
+                     from = "2012-01-01", to = "2017-08-13")
+tapply(df$count, df$package, sum)
+plot(df$count[df$package=="CARBayes"])
+length(df$count[df$package=="CARBayes"])
+lm(df$count[df$package=="CARBayes"]~1:2052)
+x <- 1:2052
+lm(df$count[df$package=="CARBayes"]~x)
+summary(lm(df$count[df$package=="CARBayes"]~x))
+summary(lm(log(df$count[df$package=="CARBayes"])~x))
+summary(lm(log(df$count[df$package=="CARBayes"]+0.01)~x))
+0.03999*10
+0.03999*100
+df <- cran_downloads(packages = c("CARBayes", "spTimer"), #
+                     from = "2012-01-01", to = "2017-08-13")
+tapply(df$count, df$package, sum)
+df <- cran_downloads(packages = c("CARBayes", "spTimer"), #
+                     from = "2016-01-01", to = "2017-08-13")
+tapply(df$count, df$package, sum)
+df <- cran_downloads(packages = c("CARBayes", "spTimer", "CARBayeST"), #
+                     from = "2016-01-01", to = "2017-08-13")
+tapply(df$count, df$package, sum)
+df <- cran_downloads(packages = c("CARBayes", "spTimer", "CARBayesST"), #
+                     from = "2016-01-01", to = "2017-08-13")
+tapply(df$count, df$package, sum)
+df <- cran_downloads(packages = c("CARBayes", "spTimer", "spbayes"), #
+                     from = "2016-01-01", to = "2017-08-13")
+tapply(df$count, df$package, sum)
+df <- cran_downloads(packages = c("CARBayes", "spTimer", "spBayes"), #
+                     from = "2016-01-01", to = "2017-08-13")
+tapply(df$count, df$package, sum)
+df <- cran_downloads(packages = c("CARBayes", "spTimer", "geoR"), #
+                     from = "2016-01-01", to = "2017-08-13")
+tapply(df$count, df$package, sum)
+df <- cran_downloads(packages = c("CARBayes", "spTimer", "mgcv"), #
+                     from = "2016-01-01", to = "2017-08-13")
+tapply(df$count, df$package, sum)
+df <- cran_downloads(packages = c("CARBayes", "spTimer", "Rcpp"), #
+                     from = "2016-01-01", to = "2017-08-13")
+tapply(df$count, df$package, sum)
+df <- cran_downloads(packages = c("CARBayes", "spTimer", "ngspatial"), #
+                     from = "2016-01-01", to = "2017-08-13")
+tapply(df$count, df$package, sum)
+df <- cran_downloads(packages = c("CARBayes", "spTimer", "gwr"), #
+                     from = "2016-01-01", to = "2017-08-13")
+tapply(df$count, df$package, sum)
+df <- cran_downloads(packages = c("CARBayes", "DCsluter", "diseasemappng"), #
+                     from = "2016-01-01", to = "2017-08-13")
+tapply(df$count, df$package, sum)
+df <- cran_downloads(packages = c("CARBayes", "DCcluster", "diseasemappng"), #
+                     from = "2016-01-01", to = "2017-08-13")
+tapply(df$count, df$package, sum)
+df <- cran_downloads(packages = c("CARBayes", "DCluster", "diseasemappng"), #
+                     from = "2016-01-01", to = "2017-08-13")
+tapply(df$count, df$package, sum)
+df <- cran_downloads(packages = c("CARBayes", "DCluster", "diseasemapping"), #
+                     from = "2016-01-01", to = "2017-08-13")
+tapply(df$count, df$package, sum)
+df <- cran_downloads(packages = c("CARBayes", "DCluster", "SpatialEpi"), #
+                     from = "2016-01-01", to = "2017-08-13")
+tapply(df$count, df$package, sum)
+df <- cran_downloads(packages = c("CARBayes", "DCluster", "spdep"), #
+                     from = "2016-01-01", to = "2017-08-13")
+tapply(df$count, df$package, sum)
+df <- cran_downloads(packages = c("CARBayes", "DCluster", "spBayesSurv"), #
+                     from = "2016-01-01", to = "2017-08-13")
+tapply(df$count, df$package, sum)
+df <- cran_downloads(packages = c("CARBayes", "sp", "spBayesSurv"), #
+                     from = "2016-01-01", to = "2017-08-13")
+tapply(df$count, df$package, sum)
+df <- cran_downloads(packages = c("CARBayes", "geoRglm", "geoR"), #
+                     from = "2016-01-01", to = "2017-08-13")
+tapply(df$count, df$package, sum)
+df <- cran_downloads(packages = c("CARBayes", "geoRglm", "clustvarsel"), #
+                     from = "2016-01-01", to = "2017-08-13")
+tapply(df$count, df$package, sum)
+df <- cran_downloads(packages = c("CARBayes", "geoRglm", "treethresh"), #
+                     from = "2016-01-01", to = "2017-08-13")
+tapply(df$count, df$package, sum)
+df <- cran_downloads(packages = c("CARBayes", "geoRglm", "sm"), #
+                     from = "2016-01-01", to = "2017-08-13")
+tapply(df$count, df$package, sum)
+300/7
+300/35
+300/37.5
+0.7*0.4
+0.7*0.2
+0.1*0.5 + 0.2*0.4+0.3*0.1
+0.3*0.1
+0.3*0.1/0.16
+choose(32,2)
+20/32
+choose(20,2)
+190/496
+0.1+0.6+1.2+1
+0.2*5
+0.4*3
+0.1 + 0.3*4 + 0.4*9 + 0.2*25
+9.9-2.9^2
+2.9*5
+2.9*5-5
+25*1.49
+32^2+9
+35-25
+-10/3
+0.8413 - 0.0004
+?pnorm
+pnorm(35, mean=32, sd=3)
+pnorm(35, mean=32, sd=3) - pnorm(25, mean=32, sd=3)
+pnorm(25, mean=32, sd=3)
+25-32
+-7/2
+-7/3
+0.8413 - 0.0099
+1-0.9901
+(105.5-100)/10
+pnorm(0.55)
+17*0.5+16*0.35+21*0.15
+11*0.65 + 13*0.35
+10.15 + 1.07 + 5.75
+16.35 + 1.20
+1.65 + 12.60 + 5.50
+exp(c(0.00234, 0.00167, 0.00297))
+445/60
+60*7
+395
+1000-95
+10/905
+15/905
+10/950
+15/950
+95/950
+950-95
+5/50
+10/50
+865+135
+10000-152
+152/4
+152-38
+9848/2
+4924+114
+4924+38
+4962+5038
+65/1967
+87 / 1856
+114/5038
+38 / 4962
+114/5038 - 0.007658202
+(114/5038) / (38/4962)
+(1/114) - (1/5038) + (1/38) - (1/4962)
+1.96 *sqrt(0.0346877)
+log(2.954744) - 1.96 *sqrt(0.0346877)
+log(2.954744) + 1.96 *sqrt(0.0346877)
+exp(0.7183692)
+exp(1.448455)
+0.8*50
+950*0.1
+exp(-2.5)
+exp(-0.05*5)
+exp(-10 * 0.05) / exp(-5*0.05)
+8/10 * (6/7)
+0.8*6/7
+f <- 0.8*6/7
+f
+f * 3/5
+f * 3/5 * (2/3)
+1-0.6857
+1-0.2742
+1.96+1.28
+3.24^2
+3.24^2 * 8
+0.5^2
+3.24^2 * 8 / 0.25
+84*4
+45/72
+0.625 * (1-0.625)
+(0.625 * (1-0.625))
+(0.625 * (1-0.625)) / 72
+sqrt()(0.625 * (1-0.625)) / 72)
+sqrt((0.625 * (1-0.625)) / 72)
+0.625 - 1.96*0.05705443
+0.625 + 1.96*0.05705443
+12*27
+library(cranlogs)
+test <- cran_downloads("CARBayes", from="2016-01-01", to="2017-09-24")
+dim(test)
+head(test)
+plot(test$count)
+sum(test$count)
+test <- cran_downloads("CARBayesST", from="2016-01-01", to="2017-09-24")
+plot(test$count)
+sum(test$count)
+59310+60301+60301+826
+277377 + 20290 + 269754*0.67 + 12574 + 523151*0.25 + 1540 + 850
+624153.9/6
+library(cranlogs)
+0.0037 / 0.0262
+0.0262 / 0.0037
+0.0246 / 0.0009
+0.0191 / 0.0036
+0.0719 / 0.0127
+(61+65+64+70+68+63+85+59+66+59)
+(61+65+64+70+68+63+85+59+66+59)/10
+6779/100
+67*4
+5459/6779
+1282/6779
+1282+5459
+5497/1282
+5497+1282
+5497 / 6779
+1282 / 6779
+75/271
+70/271
+(147625 - 146711)/146711
+100*(147625 - 146711)/146711
+100*(67814 - 67683)/67814
+100*(170718 - 146965)/170718
+100*(77647 - 67727)/77647
+3363/29
+29*115^2
+29*116^2
+sqrt(1.96/29)
+1.967* (1+1/29)
+sqrt(1.967* (1+1/29))
+16*0.921^2 + 49*0.584^2
+30.3/65
+0.466 * (1/17 + 1/50)
+sqrt(0.466 * (1/17 + 1/50))
+0.584^2
+4.30+9.50+38
+51.8 * 100
+51.8 * 100 + 950
+=741/150
+741/150
+35/48
+4/5*0.729
+0.5832*0.5
+library(cranlogs)
+?cranlogs
+cran_downloads(packages = c("CARBayes", "CARBayesST"), from = "01/01/2012", to = "30/10/2017")
+cran_downloads(packages = c("CARBayes", "CARBayesST"), from = "01/01/2012", to = "10/30/2017")
+cran_downloads(packages = c("CARBayes", "CARBayesST"), from = "2012-01-01")
+f <- cran_downloads(packages = c("CARBayes", "CARBayesST"), from = "2012-01-01")
+dim(f)
+had(f)
+head(f)
+4262/2
+f[2130:2132]
+f[2130:2132, ]
+plot(ff$count[1:2131])
+plot(f$count[1:2131])
+sum(f$count[1:2131])
+plot(f$count[2132:4262])
+f[3110:3150, ]
+f[3010:3110, ]
+sum(f$count[2132:4262])
+plot(f$count[1:2131], f$count[2132:4246])
+plot(f$count[1:2131], f$count[2132:4242])
+dim(f)
+4262/2
+plot(f$count[1:2131], f$count[2132:4262])
+1000/12
+100*12
+1200*0.6
+1000*0.6
+1000*0.6/12
+1200*0.6/12
+library(Rcpp)
+Rcpp::sourceCpp('CARBayes.cpp')

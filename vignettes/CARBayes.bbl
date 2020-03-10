@@ -1,0 +1,292 @@
+\begin{thebibliography}{44}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Bernardinelli \emph{et~al.}(1995)Bernardinelli, Clayton, Pascutto,
+  Montomoli, Ghislandi, and Songini}]{bernardinelli1995}
+Bernardinelli L, Clayton D, Pascutto C, Montomoli C, Ghislandi M, Songini M
+  (1995).
+\newblock \enquote{Bayesian Analysis of Space-Time Variation in Disease Risk.}
+\newblock \emph{Statistics in {M}edicine}, \textbf{14}, 2433--2443.
+
+\bibitem[{Besag and Higdon(1999)}]{besag1999}
+Besag J, Higdon D (1999).
+\newblock \enquote{Bayesian Analysis of Agricultural Field Experiments.}
+\newblock \emph{Journal of the {R}oyal {S}tatistical {S}ociety {S}eries {B}},
+  \textbf{61}, 691--746.
+
+\bibitem[{Besag \emph{et~al.}(1991)Besag, York, and Molli\'{e}}]{besag1991}
+Besag J, York J, Molli\'{e} A (1991).
+\newblock \enquote{Bayesian Image Restoration with Two Applications in Spatial
+  Statistics.}
+\newblock \emph{Annals of the {I}nstitute of {S}tatistics and {M}athematics},
+  \textbf{43}, 1--59.
+
+\bibitem[{Bivand \emph{et~al.}(2018)Bivand, Keitt, and Rowlingson}]{rgdal}
+Bivand R, Keitt T, Rowlingson B (2018).
+\newblock \emph{rgdal: Bindings for the 'Geospatial' Data Abstraction Library}.
+\newblock R package version 1.3-4,
+  \urlprefix\url{https://CRAN.R-project.org/package=rgdal}.
+
+\bibitem[{Bivand \emph{et~al.}(2013)Bivand, Pebesma, and
+  {Gomez-Rubio}}]{bivand2013b}
+Bivand R, Pebesma E, {Gomez-Rubio} V (2013).
+\newblock \emph{Applied spatial data analysis with R}.
+\newblock 2nd edition. Springer, NY.
+
+\bibitem[{Brewer and Nolan(2007)}]{brewer2007}
+Brewer M, Nolan A (2007).
+\newblock \enquote{Variable Smoothing in Bayesian Intrinsic Autoregressions.}
+\newblock \emph{Environmetrics}, \textbf{18}, 841--857.
+
+\bibitem[{Celeux \emph{et~al.}(2006)Celeux, Forbes, Robert, and
+  Titterington}]{celeux2006}
+Celeux G, Forbes F, Robert C, Titterington D (2006).
+\newblock \enquote{Deviance {I}nformation {C}riteria for {M}issing {D}ata
+  {M}odels.}
+\newblock \emph{Bayesian {A}nalysis}, \textbf{1}, 651--674.
+
+\bibitem[{Cheng \emph{et~al.}(2018)Cheng, Karambelkar, and Xie}]{leaflet}
+Cheng J, Karambelkar B, Xie Y (2018).
+\newblock \emph{leaflet: Create Interactive Web Maps with the JavaScript
+  'Leaflet' Library}.
+\newblock R package version 2.0.1,
+  \urlprefix\url{https://CRAN.R-project.org/package=leaflet}.
+
+\bibitem[{Congdon(2005)}]{congdon2005}
+Congdon P (2005).
+\newblock \emph{Bayesian models for categorical data}.
+\newblock 1st edition. John {W}iley and {S}ons.
+
+\bibitem[{Eddelbuettel and Francois(2011)}]{eddelbuettel2011}
+Eddelbuettel D, Francois R (2011).
+\newblock \enquote{Rcpp: {S}eamless {R} and {C}++ {I}ntegration.}
+\newblock \emph{Journal of {S}tatistical {S}oftware}, \textbf{40}, 8.
+
+\bibitem[{Furrer and Sain(2010)}]{spam2010}
+Furrer R, Sain SR (2010).
+\newblock \enquote{{spam}: A Sparse Matrix {R} Package with Emphasis on {MCMC}
+  Methods for {G}aussian {M}arkov Random Fields.}
+\newblock \emph{Journal of Statistical Software}, \textbf{36}(10), 1--25.
+\newblock \urlprefix\url{http://www.jstatsoft.org/v36/i10/}.
+
+\bibitem[{Gavin and Jennison(1997)}]{gavin1997}
+Gavin J, Jennison C (1997).
+\newblock \enquote{A {s}ubpixel {I}mage {R}estoration {A}lgorithm.}
+\newblock \emph{Journal of {C}omputational and {G}raphical and {S}tatistics},
+  \textbf{6}, 182--201.
+
+\bibitem[{Gelfand and Vounatsou(2003)}]{gelfand2003}
+Gelfand A, Vounatsou P (2003).
+\newblock \enquote{Proper multivariate conditional autoregressive models for
+  spatial data analysis.}
+\newblock \emph{Biostatistics}, \textbf{4}, 11--25.
+
+\bibitem[{Gelman \emph{et~al.}(2003)Gelman, Carlin, Stern, and
+  Rubin}]{gelman2003}
+Gelman A, Carlin J, Stern H, Rubin D (2003).
+\newblock \emph{Bayesian {D}ata {A}nalysis}.
+\newblock 2nd edition. Chapman and Hall/CRC, London.
+
+\bibitem[{Geweke(1992)}]{geweke1992}
+Geweke J (1992).
+\newblock \enquote{Evaluating the Accuracy of Sampling-Based Approaches to the
+  Calculation of Posterior Moments.}
+\newblock In \emph{IN BAYESIAN STATISTICS}, pp. 169--193. University Press.
+
+\bibitem[{Green and Richardson(2002)}]{green2002}
+Green P, Richardson S (2002).
+\newblock \enquote{Hidden {M}arkov Models and Disease Mapping.}
+\newblock \emph{Journal of the {A}merican {S}tatistical {A}ssociation},
+  \textbf{97}, 1055--1070.
+
+\bibitem[{Kavanagh \emph{et~al.}(2016)Kavanagh, Lee, and Pryce}]{Kavanagh2016}
+Kavanagh L, Lee D, Pryce G (2016).
+\newblock \enquote{Is {P}overty {D}ecentralising? {Q}uantifying {U}ncertainty
+  in the {D}ecentralisation of {U}rban {P}overty.}
+\newblock \emph{Annals of the {A}merican {A}ssociation of {G}eographers},
+  \textbf{106}, 1286--1298.
+
+\bibitem[{{Knorr-Held}(2000)}]{knorrheld2000b}
+{Knorr-Held} L (2000).
+\newblock \enquote{Bayesian modelling of Inseparable Space-Time Variation in
+  Disease Risk.}
+\newblock \emph{Statistics in {M}edicine}, \textbf{19}, 2555--2567.
+
+\bibitem[{Lee(2011)}]{lee2011}
+Lee D (2011).
+\newblock \enquote{A Comparison of Conditional Autoregressive Models Used in
+  {B}ayesian Disease Mapping.}
+\newblock \emph{Spatial and {S}patio-temporal {E}pidemiology}, \textbf{2},
+  79--89.
+
+\bibitem[{Lee(2013)}]{lee2013}
+Lee D (2013).
+\newblock \enquote{{CARBayes}: An {R} {P}ackage for {B}ayesian {S}patial
+  {M}odeling with {C}onditional {A}utoregressive {P}riors.}
+\newblock \emph{Journal of {S}tatistical {S}oftware}, \textbf{55}, 13.
+
+\bibitem[{Lee(2016)}]{carbayesdata}
+Lee D (2016).
+\newblock \emph{CARBayesdata: Data Sets Used in the Vignette Accompanying the
+  CARBayes Package}.
+\newblock R package version 2.0,
+  \urlprefix\url{https://CRAN.R-project.org/package=CARBayesdata}.
+
+\bibitem[{Lee \emph{et~al.}(2009)Lee, Ferguson, and Mitchell}]{lee2009}
+Lee D, Ferguson C, Mitchell R (2009).
+\newblock \enquote{Air Pollution and Health in {S}cotland: A Multicity Study.}
+\newblock \emph{Biostatistics}, \textbf{10}, 409--423.
+
+\bibitem[{Lee and Mitchell(2012)}]{lee2012}
+Lee D, Mitchell R (2012).
+\newblock \enquote{Boundary Detection in Disease Mapping Studies.}
+\newblock \emph{Biostatistics}, \textbf{13}, 415--426.
+
+\bibitem[{Lee \emph{et~al.}(2018)Lee, Rushworth, and Napier}]{carbayesst}
+Lee D, Rushworth A, Napier G (2018).
+\newblock \enquote{Spatio-Temporal Areal Unit Modeling in R with Conditional
+  Autoregressive Priors Using the CARBayesST Package.}
+\newblock \emph{Journal of Statistical Software, Articles}, \textbf{84}(9),
+  1--39.
+\newblock \doi{10.18637/jss.v084.i09}.
+
+\bibitem[{Lee and Sarran(2015)}]{lee2015}
+Lee D, Sarran C (2015).
+\newblock \enquote{Controlling for unmeasured confounding and spatial
+  misalignment in long-term air pollution and health studies.}
+\newblock \emph{Environmetrics}, \textbf{26}, 477--487.
+
+\bibitem[{Leroux \emph{et~al.}(2000)Leroux, Lei, and Breslow}]{leroux2000}
+Leroux B, Lei X, Breslow N (2000).
+\newblock \enquote{Estimation of Disease Rates in Small Areas: {A} New Mixed
+  Model for Spatial Dependence.}
+\newblock In M~Halloran, D~Berry (eds.), \emph{Statistical {M}odels in
+  {E}pidemiology, the {E}nvironment and {C}linical {T}rials}, pp. 179--191.
+  Springer-Verlag, {N}ew {Y}ork.
+
+\bibitem[{Lu \emph{et~al.}(2007)Lu, Reilly, Banerjee, and Carlin}]{lu2007}
+Lu H, Reilly C, Banerjee S, Carlin B (2007).
+\newblock \enquote{Bayesian Areal Wombling Via Adjacency Modelling.}
+\newblock \emph{Environmental and {E}cological {S}tatistics}, \textbf{14},
+  433--452.
+
+\bibitem[{Lunn \emph{et~al.}(2009)Lunn, Spiegelhalter, Thomas, and
+  Best}]{lunn2009}
+Lunn D, Spiegelhalter D, Thomas A, Best N (2009).
+\newblock \enquote{The \proglang{BUGS} Project: {E}volution, Critique and
+  Future Directions .}
+\newblock \emph{Statistics in {M}edicine}, \textbf{28}, 3049--3082.
+
+\bibitem[{Ma and Carlin(2007)}]{ma2007}
+Ma H, Carlin B (2007).
+\newblock \enquote{Bayesian {M}ultivariate {A}real {W}ombling for {M}ultiple
+  {D}isease {B}oundary {A}nalysis.}
+\newblock \emph{Bayesian {A}nalysis}, \textbf{2}, 281--302.
+
+\bibitem[{Martin \emph{et~al.}(2011)Martin, Quinn, and Park}]{mcmcpack}
+Martin AD, Quinn KM, Park JH (2011).
+\newblock \enquote{{MCMCpack}: Markov Chain Monte Carlo in {R}.}
+\newblock \emph{Journal of Statistical Software}, \textbf{42}(9), 22.
+\newblock \urlprefix\url{http://www.jstatsoft.org/v42/i09/}.
+
+\bibitem[{Moran(1950)}]{moran1950}
+Moran P (1950).
+\newblock \enquote{Notes on continuous stochastic phenomena.}
+\newblock \emph{Biometrika}, \textbf{37}, 17--23,
+  DOI:10.1093/biomet/37.1--2.17.
+
+\bibitem[{Novomestky(2012)}]{matrixcalc}
+Novomestky F (2012).
+\newblock \emph{matrixcalc: Collection of functions for matrix calculations}.
+\newblock R package version 1.0-3,
+  \urlprefix\url{https://CRAN.R-project.org/package=matrixcalc}.
+
+\bibitem[{Plummer \emph{et~al.}(2006)Plummer, Best, Cowles, and
+  Vines}]{coda2006}
+Plummer M, Best N, Cowles K, Vines K (2006).
+\newblock \enquote{CODA: Convergence Diagnosis and Output Analysis for MCMC.}
+\newblock \emph{R News}, \textbf{6}(1), 7--11.
+\newblock \urlprefix\url{http://CRAN.R-project.org/doc/Rnews/}.
+
+\bibitem[{Roberts and Rosenthal(1998)}]{roberts1998}
+Roberts G, Rosenthal J (1998).
+\newblock \enquote{Optimal scaling of discrete approximations to the Langevin
+  diffusions.}
+\newblock \emph{Journal of the {R}oyal {S}tatistical {S}ociety {S}eries {B}},
+  \textbf{60}, 255--268.
+
+\bibitem[{Rue \emph{et~al.}(2009)Rue, Martino, and Chopin}]{rue2009}
+Rue H, Martino S, Chopin N (2009).
+\newblock \enquote{Approximate {B}ayesian {I}nference for {L}atent {G}aussian
+  {M}odels {U}sing {I}ntegrated {N}ested {L}aplace {A}pproximations (with
+  discussion).}
+\newblock \emph{Journal of the {R}oyal {S}tatistical {S}ociety {S}eries {B}},
+  \textbf{71}, 319--392.
+
+\bibitem[{Spiegelhalter \emph{et~al.}(2002)Spiegelhalter, Best, Carlin, and
+  {Van der Linde}}]{spiegelhalter2002}
+Spiegelhalter D, Best N, Carlin B, {Van der Linde} A (2002).
+\newblock \enquote{Bayesian Measures of Model Complexity and Fit.}
+\newblock \emph{Journal of the {R}oyal {S}tatistical {S}ociety {s}eries {B}},
+  \textbf{64}, 583--639.
+
+\bibitem[{Tanner and Wong(1987)}]{tanner1987}
+Tanner M, Wong W (1987).
+\newblock \enquote{The Calculation of Posterior Distributions by Data
+  Augmentation.}
+\newblock \emph{Journal of the {A}merican {S}tatistical {A}ssociation},
+  \textbf{82}, 528--540.
+
+\bibitem[{Trautmann \emph{et~al.}(2014)Trautmann, Steuer, Mersmann, and
+  Bornkamp}]{truncnorm2014}
+Trautmann H, Steuer D, Mersmann O, Bornkamp B (2014).
+\newblock \emph{truncnorm: Truncated normal distribution}.
+\newblock R package version 1.0-7,
+  \urlprefix\url{https://CRAN.R-project.org/package=truncnorm}.
+
+\bibitem[{Ugarte \emph{et~al.}(2004)Ugarte, Ibanez, and Militino}]{ugarte2004}
+Ugarte M, Ibanez B, Militino A (2004).
+\newblock \enquote{Testing for {P}oisson {Z}ero {I}nflation in {D}isese
+  {M}apping.}
+\newblock \emph{Biometrical {J}ournal}, \textbf{46}, 526--539.
+
+\bibitem[{Venables and Ripley(2002)}]{mass2002}
+Venables WN, Ripley BD (2002).
+\newblock \emph{Modern Applied Statistics with S}.
+\newblock Fourth edition. Springer, New York.
+\newblock ISBN 0-387-95457-0,
+  \urlprefix\url{http://www.stats.ox.ac.uk/pub/MASS4}.
+
+\bibitem[{Wakefield(2007)}]{wakefield2007}
+Wakefield J (2007).
+\newblock \enquote{Disease Mapping and Spatial Regression with Count Data.}
+\newblock \emph{Biostatistics}, \textbf{8}, 158--183.
+
+\bibitem[{Wall(2004)}]{wall2004}
+Wall M (2004).
+\newblock \enquote{A Close Look at the Spatial Structure Implied by the {CAR}
+  and {SAR} Models.}
+\newblock \emph{Journal of {S}tatistical {P}lanning and {I}nference},
+  \textbf{121}, 311--324.
+
+\bibitem[{Watanabe(2010)}]{watanabe2010}
+Watanabe S (2010).
+\newblock \enquote{Asymptotic equivalence of the {B}ayes cross validation and
+  widely applicable information criterion in singular learning theory.}
+\newblock \emph{Journal of {M}achine {L}earning {R}esearch}, \textbf{11},
+  3571--3594.
+
+\bibitem[{Womble(1951)}]{womble1951}
+Womble W (1951).
+\newblock \enquote{Differential Systematics.}
+\newblock \emph{Science}, \textbf{114}, 315--322.
+
+\end{thebibliography}

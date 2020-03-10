@@ -1,0 +1,34 @@
+useDynLib(CARBayes, .registration = TRUE)
+export(
+     combine.data.shapefile,
+	 highlight.borders,
+	 MVS.CARleroux,
+     S.CARbym, 
+     S.CARdissimilarity,
+     S.CARleroux,
+     S.CARlocalised,
+	 S.CARmultilevel,
+	 S.glm,
+     summarise.lincomb,
+     summarise.samples
+     )
+S3method(print, CARBayes)
+S3method(fitted, CARBayes)
+S3method(model.matrix, CARBayes)
+S3method(coef, CARBayes)
+S3method(residuals, CARBayes)
+S3method(logLik, CARBayes)
+import(Rcpp)
+import(CARBayesdata)
+import(leaflet)
+import(MASS)
+importFrom(truncnorm, rtruncnorm, dtruncnorm)
+importFrom(spam, as.spam,  chol.spam, diag, rowSums)
+importFrom(coda, mcmc, geweke.diag, effectiveSize)
+importFrom(sp, Polygon,  Polygons, SpatialPolygons, SpatialPolygonsDataFrame, SpatialPoints)
+importFrom(spdep, mat2listw, n.comp.nb)
+importFrom(utils, setTxtProgressBar, txtProgressBar)
+import(rgdal)
+import(stats)
+importFrom(matrixcalc, is.symmetric.matrix, is.positive.definite)
+importFrom(MCMCpack, riwish)

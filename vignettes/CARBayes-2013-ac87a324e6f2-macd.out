@@ -1,0 +1,22 @@
+\BOOKMARK [1][-]{Section.0.Introduction.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{Section.1.Spatial models for areal unit data.1}{Spatial models for areal unit data}{}% 2
+\BOOKMARK [2][-]{Subsection.2.0.Univariate spatial data models.2}{Univariate spatial data models}{Section.1.Spatial models for areal unit data.1}% 3
+\BOOKMARK [3][-]{Subsubsection.2.1.0.A model with no random effects.3}{A model with no random effects}{Subsection.2.0.Univariate spatial data models.2}% 4
+\BOOKMARK [3][-]{Subsubsection.2.1.1.Globally smooth CAR models.3}{Globally smooth CAR models}{Subsection.2.0.Univariate spatial data models.2}% 5
+\BOOKMARK [3][-]{Subsubsection.2.1.2.Locally smooth CAR models.3}{Locally smooth CAR models}{Subsection.2.0.Univariate spatial data models.2}% 6
+\BOOKMARK [2][-]{Subsection.2.1.Multivariate spatial data models.2}{Multivariate spatial data models}{Section.1.Spatial models for areal unit data.1}% 7
+\BOOKMARK [2][-]{Subsection.2.2.Two-level spatial data models.2}{Two-level spatial data models}{Section.1.Spatial models for areal unit data.1}% 8
+\BOOKMARK [2][-]{Subsection.2.3.Inference.2}{Inference}{Section.1.Spatial models for areal unit data.1}% 9
+\BOOKMARK [1][-]{Section.2.Loading and using the software.1}{Loading and using the software}{}% 10
+\BOOKMARK [2][-]{Subsection.3.0.Loading the software.2}{Loading the software}{Section.2.Loading and using the software.1}% 11
+\BOOKMARK [2][-]{Subsection.3.1.Using the software.2}{Using the software}{Section.2.Loading and using the software.1}% 12
+\BOOKMARK [1][-]{Section.3.Example 1 - Scottish lip cancer data.1}{Example 1 - Scottish lip cancer data}{}% 13
+\BOOKMARK [1][-]{Section.4.Example 2 - property prices in Greater Glasgow.1}{Example 2 - property prices in Greater Glasgow}{}% 14
+\BOOKMARK [2][-]{Subsection.5.0.Data and exploratory analysis.2}{Data and exploratory analysis}{Section.4.Example 2 - property prices in Greater Glasgow.1}% 15
+\BOOKMARK [2][-]{Subsection.5.1.Non-spatial modelling.2}{Non-spatial modelling}{Section.4.Example 2 - property prices in Greater Glasgow.1}% 16
+\BOOKMARK [2][-]{Subsection.5.2.Spatial modelling with CARBayes.2}{Spatial modelling with CARBayes}{Section.4.Example 2 - property prices in Greater Glasgow.1}% 17
+\BOOKMARK [2][-]{Subsection.5.3.Inference.2}{Inference}{Section.4.Example 2 - property prices in Greater Glasgow.1}% 18
+\BOOKMARK [1][-]{Section.5.Example 3 - identifying high-risk disease clusters.1}{Example 3 - identifying high-risk disease clusters}{}% 19
+\BOOKMARK [2][-]{Subsection.6.0.Data and exploratory analysis.2}{Data and exploratory analysis}{Section.5.Example 3 - identifying high-risk disease clusters.1}% 20
+\BOOKMARK [2][-]{Subsection.6.1.Spatial modelling with CARBayes.2}{Spatial modelling with CARBayes}{Section.5.Example 3 - identifying high-risk disease clusters.1}% 21
+\BOOKMARK [1][-]{Section.6.Discussion.1}{Discussion}{}% 22
