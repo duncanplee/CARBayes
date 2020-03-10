@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.24)  9 MAR 2020 15:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.24)  10 MAR 2020 10:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -503,154 +503,38 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 57.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-(./CARBayes-concordance.tex)
-
-Package natbib Warning: Citation `besag1999' on page 1 undefined on input line 
-68.
-
-
-Package natbib Warning: Citation `brewer2007' on page 1 undefined on input line
- 68.
-
-
-Package natbib Warning: Citation `wall2004' on page 1 undefined on input line 6
-8.
-
-
-Package natbib Warning: Citation `lee2011' on page 1 undefined on input line 68
-.
-
-
-Package natbib Warning: Citation `gavin1997' on page 1 undefined on input line 
-68.
-
-
-Package natbib Warning: Citation `wakefield2007' on page 1 undefined on input l
-ine 68.
-
-
-Package natbib Warning: Citation `lee2009' on page 1 undefined on input line 68
-.
-
-
-Package natbib Warning: Citation `green2002' on page 1 undefined on input line 
-68.
-
-
-Package natbib Warning: Citation `lee2011' on page 1 undefined on input line 68
-.
-
-
-Package natbib Warning: Citation `lu2007' on page 1 undefined on input line 68.
-
-
-
-Package natbib Warning: Citation `ma2007' on page 1 undefined on input line 68.
-
-
-
-Package natbib Warning: Citation `besag1991' on page 1 undefined on input line 
-70.
-
-
-Package natbib Warning: Citation `besag1991' on page 1 undefined on input line 
-70.
-
-
-Package natbib Warning: Citation `leroux2000' on page 1 undefined on input line
- 70.
-
-[1
+(./CARBayes-concordance.tex) [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-Package natbib Warning: Citation `lee2012' on page 2 undefined on input line 72
-.
-
-
-Package natbib Warning: Citation `lee2015' on page 2 undefined on input line 72
-.
-
-
-Package natbib Warning: Citation `lunn2009' on page 2 undefined on input line 7
-4.
-
-
-Package natbib Warning: Citation `rue2009' on page 2 undefined on input line 74
-.
-
-
-Package natbib Warning: Citation `lee2013' on page 2 undefined on input line 76
-.
-
-
-Package natbib Warning: Citation `carbayesst' on page 2 undefined on input line
- 76.
-
-LaTeX Font Info:    Try loading font information for T1+aett on input line 89.
-(/usr/local/texlive/2019/texmf-dist/tex/latex/ae/t1aett.fd
-File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-)
-
-Package natbib Warning: Citation `tanner1987' on page 2 undefined on input line
- 89.
-
-
-Underfull \vbox (badness 7925) has occurred while \output is active []
-
 LaTeX Font Info:    Font shape `T1/aer/b/sl' in size <10.95> not available
-(Font)              Font shape `T1/aer/bx/sl' tried instead on input line 90.
+(Font)              Font shape `T1/aer/bx/sl' tried instead on input line 86.
 
 Overfull \hbox (5.47499pt too wide) has occurred while \output is active
 \T1/aer/m/n/10.95 2 []
  []
 
 [2]
+LaTeX Font Info:    Try loading font information for T1+aett on input line 89.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/ae/t1aett.fd
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+)
 LaTeX Font Info:    Try loading font information for TS1+aer on input line 102.
 
- (/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/ts1aer.fd
+
+(/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/ts1aer.fd
 File: ts1aer.fd 
 )
 LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <10.95> not available
 (Font)              Font shape `TS1/cmr/m/n' tried instead on input line 102.
-
-Package natbib Warning: Citation `ugarte2004' on page 3 undefined on input line
- 113.
-
 
 Overfull \hbox (5.47499pt too wide) has occurred while \output is active
 [] \T1/aer/m/n/10.95 3
  []
 
 [3]
-
-Package natbib Warning: Citation `besag1991' on page 4 undefined on input line 
-122.
-
-
-Package natbib Warning: Citation `leroux2000' on page 4 undefined on input line
- 124.
-
-
-Package natbib Warning: Citation `besag1991' on page 4 undefined on input line 
-124.
-
-
-Package natbib Warning: Citation `lee2012' on page 4 undefined on input line 12
-6.
-
-
-Package natbib Warning: Citation `lee2015' on page 4 undefined on input line 12
-8.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
-
-
-LaTeX Warning: Reference `equation likelihood' on page 4 undefined on input lin
-e 138.
 
 
 Overfull \hbox (5.47499pt too wide) has occurred while \output is active
@@ -658,22 +542,9 @@ Overfull \hbox (5.47499pt too wide) has occurred while \output is active
  []
 
 [4]
-
-Package natbib Warning: Citation `besag1991' on page 5 undefined on input line 
-142.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
  []
-
-
-Package natbib Warning: Citation `leroux2000' on page 5 undefined on input line
- 156.
-
-
-LaTeX Warning: Reference `equation leroux' on page 5 undefined on input line 17
-0.
 
 
 Overfull \hbox (5.47499pt too wide) has occurred while \output is active
@@ -681,49 +552,7 @@ Overfull \hbox (5.47499pt too wide) has occurred while \output is active
  []
 
 [5]
-
-Package natbib Warning: Citation `lee2012' on page 6 undefined on input line 17
-7.
-
-
-Package natbib Warning: Citation `lee2015' on page 6 undefined on input line 17
-7.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 177--178
-
- []
-
-
-Package natbib Warning: Citation `lee2012' on page 6 undefined on input line 18
-1.
-
-
-LaTeX Warning: Reference `equation partialcorrelation' on page 6 undefined on i
-nput line 181.
-
-
-LaTeX Warning: Reference `equation leroux' on page 6 undefined on input line 18
-3.
-
-
-LaTeX Warning: Reference `equation binary neighbourhood' on page 6 undefined on
- input line 199.
-
-
-LaTeX Warning: Reference `equation nonbinary neighbourhood' on page 6 undefined
- on input line 199.
-
-
-LaTeX Warning: Reference `equation binary neighbourhood' on page 6 undefined on
- input line 199.
-
-
-LaTeX Warning: Reference `equation nonbinary neighbourhood' on page 6 undefined
- on input line 199.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 199--200
 
  []
 
@@ -733,9 +562,9 @@ Overfull \hbox (5.47499pt too wide) has occurred while \output is active
  []
 
 [6]
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
 
-Package natbib Warning: Citation `lee2015' on page 7 undefined on input line 20
-3.
+ []
 
 
 Overfull \hbox (5.47499pt too wide) has occurred while \output is active
@@ -748,22 +577,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 233--234
  []
 
 
-Package natbib Warning: Citation `gelfand2003' on page 8 undefined on input lin
-e 248.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 248--249
 
  []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 250--252
-
- []
-
-
-Package natbib Warning: Citation `Kavanagh2016' on page 8 undefined on input li
-ne 255.
 
 
 Overfull \hbox (5.47499pt too wide) has occurred while \output is active
@@ -771,51 +587,45 @@ Overfull \hbox (5.47499pt too wide) has occurred while \output is active
  []
 
 [8]
-
-Package natbib Warning: Citation `leroux2000' on page 9 undefined on input line
- 263.
-
-
-LaTeX Warning: Reference `MCAR' on page 9 undefined on input line 263.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 299--300
+Underfull \hbox (badness 10000) in paragraph at lines 250--252
 
  []
 
-
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.9}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.257 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.2.9}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.257 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.2.9}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.257 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{equation.2.9}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.257 \begin{equation}
+                      
 Overfull \hbox (5.47499pt too wide) has occurred while \output is active
 [] \T1/aer/m/n/10.95 9
  []
 
 [9pdfTeX warning (ext4): destination with the same identifier (name{equation.2.
-9}) has been already used, duplicate ignored
+10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.305 
-      pdfTeX warning (ext4): destination with the same identifier (name{equatio
-n.2.10}) has been already used, duplicate ignored
+l.287 \end{eqnarray}
+                    ]
+Underfull \hbox (badness 10000) in paragraph at lines 299--300
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.305 
-      ]
-
-Package natbib Warning: Citation `leroux2000' on page 10 undefined on input lin
-e 314.
-
-
-Package natbib Warning: Citation `roberts1998' on page 10 undefined on input li
-ne 320.
-
-
-Package natbib Warning: Citation `eddelbuettel2011' on page 10 undefined on inp
-ut line 320.
-
-
-Package natbib Warning: Citation `tanner1987' on page 10 undefined on input lin
-e 320.
+ []
 
 
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
@@ -823,43 +633,6 @@ Overfull \hbox (10.94998pt too wide) has occurred while \output is active
  []
 
 [10]
-
-Package natbib Warning: Citation `mass2002' on page 11 undefined on input line 
-330.
-
-
-Package natbib Warning: Citation `carbayesdata' on page 11 undefined on input l
-ine 330.
-
-
-Package natbib Warning: Citation `coda2006' on page 11 undefined on input line 
-330.
-
-
-Package natbib Warning: Citation `leaflet' on page 11 undefined on input line 3
-30.
-
-
-Package natbib Warning: Citation `matrixcalc' on page 11 undefined on input lin
-e 330.
-
-
-Package natbib Warning: Citation `mcmcpack' on page 11 undefined on input line 
-330.
-
-
-Package natbib Warning: Citation `spam2010' on page 11 undefined on input line 
-330.
-
-
-Package natbib Warning: Citation `bivand2013b' on page 11 undefined on input li
-ne 330.
-
-
-Package natbib Warning: Citation `truncnorm2014' on page 11 undefined on input 
-line 330.
-
-
 Overfull \hbox (24.45966pt too wide) in paragraph at lines 335--336
 []\T1/aer/m/n/10.95 The soft-ware can fit seven mod-els: \T1/aett/m/n/10.95 S.g
 lm()\T1/aer/m/n/10.95 , \T1/aett/m/n/10.95 S.CARbym()\T1/aer/m/n/10.95 , \T1/ae
@@ -868,6 +641,11 @@ rity()
  []
 
 
+Overfull \hbox (10.94998pt too wide) has occurred while \output is active
+[] \T1/aer/m/n/10.95 11
+ []
+
+[11]
 Overfull \hbox (32.35724pt too wide) in paragraph at lines 340--341
 []\T1/aett/m/n/10.95 family \T1/aer/m/n/10.95 - The like-li-hood model which mu
 st be one of \T1/aett/m/n/10.95 "binomial"\T1/aer/m/n/10.95 , \T1/aett/m/n/10.9
@@ -877,35 +655,14 @@ st be one of \T1/aett/m/n/10.95 "binomial"\T1/aer/m/n/10.95 , \T1/aett/m/n/10.9
 
 
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
-[] \T1/aer/m/n/10.95 11
- []
-
-[11]
-
-Package natbib Warning: Citation `geweke1992' on page 12 undefined on input lin
-e 369.
-
-
-Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 \T1/aer/m/n/10.95 12 []
  []
 
 [12]
-
-Package natbib Warning: Citation `spiegelhalter2002' on page 13 undefined on in
-put line 377.
-
-
-Package natbib Warning: Citation `watanabe2010' on page 13 undefined on input l
-ine 377.
-
-
-Package natbib Warning: Citation `congdon2005' on page 13 undefined on input li
-ne 377.
-
-
-Package natbib Warning: Citation `celeux2006' on page 13 undefined on input lin
-e 377.
+Overfull \hbox (1.72365pt too wide) in paragraph at lines 377--378
+[]\T1/aett/m/n/10.95 modelfit \T1/aer/m/n/10.95 - Model fit cri-te-ria in-clud-
+ing the De-viance In-for-ma-tion Cri-te-rion (DIC, [][]Spiegel-
+ []
 
 
 Overfull \hbox (16.98924pt too wide) in paragraph at lines 381--382
@@ -920,11 +677,6 @@ Overfull \hbox (10.94998pt too wide) has occurred while \output is active
  []
 
 [13]
-
-Package natbib Warning: Citation `rgdal' on page 14 undefined on input line 422
-.
-
-
 Overfull \hbox (1.80229pt too wide) in paragraph at lines 422--423
 \T1/aer/m/n/10.95 the sec-ond line of the above code. The \T1/aett/m/n/10.95 da
 ta.combined \T1/aer/m/n/10.95 ob-ject is a \T1/aett/m/n/10.95 SpatialPolygonsDa
@@ -937,20 +689,12 @@ Overfull \hbox (10.94998pt too wide) has occurred while \output is active
  []
 
 [14]
-
-LaTeX Warning: Reference `table_scotland data' on page 15 undefined on input li
-ne 452.
-
-
-LaTeX Warning: Reference `scatterplot' on page 15 undefined on input line 480.
-
-
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 [] \T1/aer/m/n/10.95 15
  []
 
 [15]
-<scatterplot.png, id=131, 1416.29124pt x 981.6675pt>
+<scatterplot.png, id=374, 1416.29124pt x 981.6675pt>
 File: scatterplot.png Graphic file (type png)
 <use scatterplot.png>
 Package pdftex.def Info: scatterplot.png  used on input line 495.
@@ -960,11 +704,8 @@ Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 \T1/aer/m/n/10.95 16 []
  []
 
-[16 <./scatterplot.png>]
-
-LaTeX Warning: Reference `pricemap' on page 17 undefined on input line 537.
-
-<map1.png, id=139, 1302.8675pt x 1062.97125pt>
+[16]
+<map1.png, id=382, 1302.8675pt x 1062.97125pt>
 File: map1.png Graphic file (type png)
 <use map1.png>
 Package pdftex.def Info: map1.png  used on input line 541.
@@ -974,218 +715,121 @@ Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 [] \T1/aer/m/n/10.95 17
  []
 
-[17 <./map1.png>]
-
-Package natbib Warning: Citation `moran1950' on page 18 undefined on input line
- 582.
+[17 <./scatterplot.png>]
+Underfull \vbox (badness 1331) has occurred while \output is active []
 
 
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 \T1/aer/m/n/10.95 18 []
  []
 
-[18]
-
-LaTeX Warning: Reference `equation likelihood' on page 19 undefined on input li
-ne 608.
-
-
-LaTeX Warning: Reference `equation leroux' on page 19 undefined on input line 6
-08.
-
-
+[18 <./map1.png>]
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 [] \T1/aer/m/n/10.95 19
  []
 
 [19]
-
-Package natbib Warning: Citation `geweke1992' on page 20 undefined on input lin
-e 657.
-
-
-Package natbib Warning: Citation `gelman2003' on page 20 undefined on input lin
-e 679.
-
-
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 \T1/aer/m/n/10.95 20 []
  []
 
 [20]
-<crimeplot.png, id=164, 1035.87pt x 633.36626pt>
-File: crimeplot.png Graphic file (type png)
-<use crimeplot.png>
-Package pdftex.def Info: crimeplot.png  used on input line 724.
-(pdftex.def)             Requested size: 354.12434pt x 216.52074pt.
-
-
-LaTeX Warning: Reference `crimeplot' on page 21 undefined on input line 728.
-
-
-Package natbib Warning: Citation `lee2012' on page 21 undefined on input line 7
-32.
-
-
-Package natbib Warning: Citation `womble1951' on page 21 undefined on input lin
-e 732.
-
-
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 [] \T1/aer/m/n/10.95 21
  []
 
 [21]
+<priceMCMC.png, id=422, 1304.875pt x 882.29625pt>
+File: priceMCMC.png Graphic file (type png)
+<use priceMCMC.png>
+Package pdftex.def Info: priceMCMC.png  used on input line 721.
+(pdftex.def)             Requested size: 354.12434pt x 239.43481pt.
+
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 \T1/aer/m/n/10.95 22 []
  []
 
-[22 <./crimeplot.png>]
-
-LaTeX Warning: Reference `smrmap' on page 23 undefined on input line 781.
-
-<map2.png, id=181, 1035.87pt x 693.59125pt>
-File: map2.png Graphic file (type png)
-<use map2.png>
-Package pdftex.def Info: map2.png  used on input line 805.
-(pdftex.def)             Requested size: 354.12434pt x 237.10907pt.
-
-Package natbib Warning: Citation `lee2012' on page 23 undefined on input line 8
-10.
-
-
+[22 <./priceMCMC.png>]
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 [] \T1/aer/m/n/10.95 23
  []
 
 [23]
-
-Package natbib Warning: Citation `wakefield2007' on page 24 undefined on input 
-line 825.
-
-
-Overfull \hbox (0.3704pt too wide) in paragraph at lines 825--826
-[]\T1/aer/m/n/10.95 Let the ob-served and ex-pected num-bers of hos-pi-tal ad-m
-is-sions be de-noted by $\OT1/cmr/bx/n/10.95 Y \OT1/cmr/m/n/10.95 = (\OML/cmm/m
-/it/10.95 Y[]; [] ; Y[]\OT1/cmr/m/n/10.95 )$
- []
-
-
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 \T1/aer/m/n/10.95 24 []
  []
 
-[24 <./map2.png>]
-
-LaTeX Warning: Reference `equation binary neighbourhood' on page 25 undefined o
-n input line 834.
-
+[24]
+<map2.png, id=449, 989.6975pt x 682.55pt>
+File: map2.png Graphic file (type png)
+<use map2.png>
+Package pdftex.def Info: map2.png  used on input line 854.
+(pdftex.def)             Requested size: 354.12434pt x 244.21808pt.
 
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 [] \T1/aer/m/n/10.95 25
  []
 
-[25]
-
-Package natbib Warning: Citation `lee2012' on page 26 undefined on input line 8
-76.
-
-
-LaTeX Warning: Reference `figure_boundary' on page 26 undefined on input line 8
-88.
-
-<map3.png, id=199, 1035.87pt x 693.59125pt>
-File: map3.png Graphic file (type png)
-<use map3.png>
-Package pdftex.def Info: map3.png  used on input line 907.
-(pdftex.def)             Requested size: 354.12434pt x 237.10907pt.
-
+[25 <./map2.png>]
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 \T1/aer/m/n/10.95 26 []
  []
 
 [26]
-
-Package natbib Warning: Citation `lee2012' on page 27 undefined on input line 9
-17.
-
-
-Package natbib Warning: Citation `lee2015' on page 27 undefined on input line 9
-17.
-
-
-Package natbib Warning: Citation `bernardinelli1995' on page 27 undefined on in
-put line 917.
-
-
-Package natbib Warning: Citation `knorrheld2000b' on page 27 undefined on input
- line 917.
-
-
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 [] \T1/aer/m/n/10.95 27
  []
 
-[27 <./map3.png>] (./CARBayes.bbl
+[27]
+<map3.png, id=474, 1356.06625pt x 682.55pt>
+File: map3.png Graphic file (type png)
+<use map3.png>
+Package pdftex.def Info: map3.png  used on input line 966.
+(pdftex.def)             Requested size: 354.12434pt x 178.23993pt.
+
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 \T1/aer/m/n/10.95 28 []
  []
 
-[28]
+[28 <./map3.png>] (./CARBayes.bbl
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 [] \T1/aer/m/n/10.95 29
  []
 
-[29])
-
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 924.
-
+[29]
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 \T1/aer/m/n/10.95 30 []
  []
 
-[30]
+[30])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 983.
+
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 [] \T1/aer/m/n/10.95 31
  []
 
 [31]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 924.
- (./CARBayes.aux
+Overfull \hbox (10.94998pt too wide) has occurred while \output is active
+\T1/aer/m/n/10.95 32 []
+ []
 
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 924.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 924.
-
-
-Package rerunfilecheck Warning: File `CARBayes.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `CARBayes.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  50F265D0ED89AB76D2A24A79893B0EB1;2878.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 924.
+[32]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 983.
+ (./CARBayes.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 983.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 983.
+Package rerunfilecheck Info: File `CARBayes.out' has not changed.
+(rerunfilecheck)             Checksum: 50F265D0ED89AB76D2A24A79893B0EB1;2878.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 983.
  ) 
 Here is how much of TeX's memory you used:
- 7499 strings out of 492616
- 109336 string characters out of 6129481
- 193867 words of memory out of 5000000
- 11108 multiletter control sequences out of 15000+600000
+ 7515 strings out of 492616
+ 110155 string characters out of 6129481
+ 196691 words of memory out of 5000000
+ 11125 multiletter control sequences out of 15000+600000
  58128 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,12n,34p,1432b,471s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,12n,34p,1426b,473s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb><
 /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></
@@ -1208,10 +852,10 @@ ive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texli
 ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texliv
 e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive
 /2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on CARBayes.pdf (31 pages, 2488262 bytes).
+Output written on CARBayes.pdf (32 pages, 2901809 bytes).
 PDF statistics:
- 387 PDF objects out of 1000 (max. 8388607)
- 318 compressed objects within 4 object streams
+ 619 PDF objects out of 1000 (max. 8388607)
+ 547 compressed objects within 6 object streams
  137 named destinations out of 1000 (max. 500000)
- 30 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 206 words of extra memory for PDF output out of 10000 (max. 10000000)
 
