@@ -24,7 +24,7 @@ accompanying this package.
 \usage{
 S.CARlocalised(formula, family, data=NULL, G, trials=NULL, W,
 burnin, n.sample, thin=1, prior.mean.beta=NULL, prior.var.beta=NULL,
-prior.tau2=NULL,prior.delta=NULL, MALA=TRUE, verbose=TRUE)
+prior.tau2=NULL,prior.delta=NULL, MALA=FALSE, verbose=TRUE)
 }
 
 %- maybe also 'usage' for other objects documented here.
@@ -84,7 +84,7 @@ The prior maximum for the cluster smoothing parameter delta. Defaults to 10.
 }
     \item{MALA}{
         Logical, should the function use Metropolis adjusted Langevin algorithm 
-        (MALA) updates (TRUE, default) or simple random walk (FALSE) updates for 
+        (MALA) updates (TRUE) or simple random walk (FALSE, default) updates for 
         the random effects.   
 }
   \item{verbose}{

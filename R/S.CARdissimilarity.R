@@ -1,4 +1,4 @@
-S.CARdissimilarity <- function(formula, family, data=NULL,  trials=NULL, W, Z, W.binary=TRUE, burnin, n.sample, thin=1, prior.mean.beta=NULL, prior.var.beta=NULL, prior.nu2=NULL, prior.tau2=NULL, MALA=TRUE, verbose=TRUE)
+S.CARdissimilarity <- function(formula, family, data=NULL,  trials=NULL, W, Z, W.binary=TRUE, burnin, n.sample, thin=1, prior.mean.beta=NULL, prior.var.beta=NULL, prior.nu2=NULL, prior.tau2=NULL, MALA=FALSE, verbose=TRUE)
 {
 #### This is a wrapper function that calls one of
 ## binomial.properCAR

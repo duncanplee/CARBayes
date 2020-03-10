@@ -36,7 +36,7 @@
 \usage{
 MVS.CARleroux(formula, family, data=NULL,  trials=NULL, W, burnin, 
 n.sample, thin=1, prior.mean.beta=NULL, prior.var.beta=NULL, prior.nu2=NULL,
-prior.Sigma.df=NULL, prior.Sigma.scale=NULL, rho=NULL, MALA=TRUE, 
+prior.Sigma.df=NULL, prior.Sigma.scale=NULL, rho=NULL, MALA=FALSE, 
 verbose=TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
@@ -109,7 +109,7 @@ estimated in the model.
 }
 \item{MALA}{
         Logical, should the function use Metropolis adjusted Langevin algorithm 
-        (MALA) updates (TRUE, default) or simple random walk (FALSE) updates for 
+        (MALA) updates (TRUE, default) or simple random walk (FALSE, default) updates for 
         the random effects. Not applicable if family="gaussian" or "multinomial".   
 }
 \item{verbose}{

@@ -1,4 +1,4 @@
-S.CARleroux <- function(formula, formula.omega=NULL, family, data=NULL,  trials=NULL, W, burnin, n.sample, thin=1, prior.mean.beta=NULL, prior.var.beta=NULL, prior.nu2=NULL, prior.tau2=NULL, prior.mean.delta=NULL, prior.var.delta=NULL, rho=NULL, MALA=TRUE, verbose=TRUE)
+S.CARleroux <- function(formula, formula.omega=NULL, family, data=NULL,  trials=NULL, W, burnin, n.sample, thin=1, prior.mean.beta=NULL, prior.var.beta=NULL, prior.nu2=NULL, prior.tau2=NULL, prior.mean.delta=NULL, prior.var.delta=NULL, rho=NULL, MALA=FALSE, verbose=TRUE)
 {
     #### This is a wrapper function that calls one of
     ## binomial.lerouxCAR

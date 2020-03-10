@@ -22,7 +22,7 @@ model specification see the vignette accompanying this package.
 \usage{
 S.CARdissimilarity(formula, family, data=NULL,  trials=NULL, W, 
 Z, W.binary=TRUE, burnin, n.sample, thin=1, prior.mean.beta=NULL, 
-prior.var.beta=NULL, prior.nu2=NULL, prior.tau2=NULL, MALA=TRUE, verbose=TRUE)
+prior.var.beta=NULL, prior.nu2=NULL, prior.tau2=NULL, MALA=FALSE, verbose=TRUE)
 }
 
 
@@ -86,7 +86,7 @@ prior for tau2. Defaults to c(1, 0.01).
 }
 \item{MALA}{
 Logical, should the function use Metropolis adjusted Langevin algorithm (MALA) 
-    updates (TRUE, default) or simple random walk (FALSE) updates for the random 
+    updates (TRUE) or simple random walk (FALSE, default) updates for the random 
     effects. Not applicable if family="gaussian".   
 }
   \item{verbose}{

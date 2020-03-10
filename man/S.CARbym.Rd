@@ -28,7 +28,7 @@ specification see the vignette accompanying this package.
 \usage{
 S.CARbym(formula, formula.omega=NULL, family, data=NULL, trials=NULL, W, burnin, 
 n.sample, thin=1, prior.mean.beta=NULL, prior.var.beta=NULL,  prior.tau2=NULL, 
-prior.sigma2=NULL, prior.mean.delta=NULL, prior.var.delta=NULL, MALA=TRUE, 
+prior.sigma2=NULL, prior.mean.delta=NULL, prior.var.delta=NULL, MALA=FALSE, 
 verbose=TRUE)
 }
 
@@ -103,7 +103,7 @@ Defaults to a vector with values 100000.
 }
 \item{MALA}{
 Logical, should the function use Metropolis adjusted Langevin algorithm (MALA) 
-updates (TRUE, default) or simple random walk (FALSE) updates for the random effects.
+updates (TRUE) or simple random walk (FALSE, default) updates for the random effects.
 }
   \item{verbose}{
 Logical, should the function update the user on its progress.  

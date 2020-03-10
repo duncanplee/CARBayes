@@ -1,4 +1,4 @@
-S.CARlocalised <- function(formula, family,  data=NULL, G, trials=NULL, W, burnin, n.sample, thin=1, prior.mean.beta=NULL, prior.var.beta=NULL, prior.tau2=NULL, prior.delta=NULL, MALA=TRUE, verbose=TRUE)
+S.CARlocalised <- function(formula, family,  data=NULL, G, trials=NULL, W, burnin, n.sample, thin=1, prior.mean.beta=NULL, prior.var.beta=NULL, prior.tau2=NULL, prior.delta=NULL, MALA=FALSE, verbose=TRUE)
 {
 #### This is a wrapper function that calls one of
 ## binomial.localisedCAR
