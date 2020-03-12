@@ -345,70 +345,92 @@ List binomialbetaupdateMALA(NumericMatrix X, const int nsites, const int p, Nume
 }
 
 
-
-
 // [[Rcpp::export]]
 List binomialbetaupdateRW(NumericMatrix X, const int nsites, const int p, NumericVector beta, 
-                            NumericVector offset, NumericVector y,  NumericVector failures,
-                            NumericVector prior_meanbeta, NumericVector prior_varbeta, 
-                            double beta_tune)
+                          NumericVector offset, NumericVector y,  NumericVector failures,
+                          NumericVector prior_meanbeta, NumericVector prior_varbeta, 
+                          const int nblock,double beta_tune, List block_list)
 {
-    // Compute the acceptance probability for beta
-    //Create new objects
-    double oldlikebit=0, newlikebit=0, likebit, priorbit=0;
-    double acceptance;
-    NumericVector lp_current(nsites), lp_proposal(nsites), p_current(nsites), p_proposal(nsites), mala_temp1(nsites);
-    List out(2);
+  // Compute the acceptance probability for beta
+  //Create new objects
+  int accept=0;
+  double oldlikebit=0, newlikebit=0, likebit, priorbit=0;
+  double acceptance;
+  NumericVector lp_current(nsites), lp_proposal(nsites), p_current(nsites), p_proposal(nsites);
+  
+  // Create two beta vectors
+  NumericVector beta_old(p);
+  NumericVector beta_new(p);
+  for(int g=0; g<p; g++)
+  {
+    beta_old[g] = beta[g];
+    beta_new[g] = beta[g];
+  }
+  
+  // Update each block in turn
+  for(int r=0; r<nblock; r++)
+  {
+    // Determine the block to update
+    IntegerVector idx = block_list[r];
+    int len = block_list[(nblock+r)];
     
-    // Create a beta new vector
-        NumericVector beta_new(p);
-        for(int g = 0; g < p; g++)
-        {
-        beta_new[g] = beta[g];
-        }
-    
-    // Update the parameters in one go as p is less than 3
     // Propose a value
-        for(int g = 0; g < p; g++)
-        {
-        beta_new[g] = rnorm(1, beta[g], beta_tune)[0];
-        }
+    for(int g=0; g<len; g++)
+    {
+      beta_new[idx[g]] = rnorm(1, beta_old[g], beta_tune)[0];
+    }
     
-    // Compute the acceptance ratio - full conditionals   
-    lp_current = linpredcompute(X, nsites, p, beta, offset);
+    
+    // Compute the acceptance ratio - full conditionals  
+    oldlikebit = 0;
+    newlikebit=0;
+    lp_current = linpredcompute(X, nsites, p, beta_old, offset);
     lp_proposal = linpredcompute(X, nsites, p, beta_new, offset);     
-        for(int j = 0; j < nsites; j++)     
-        {
-        p_current[j] = exp(lp_current[j]) / (1 + exp(lp_current[j]));
-        p_proposal[j] = exp(lp_proposal[j]) / (1 + exp(lp_proposal[j]));
-        oldlikebit = oldlikebit + y[j] * log(p_current[j]) + failures[j] * log((1-p_current[j]));
-        newlikebit = newlikebit + y[j] * log(p_proposal[j]) + failures[j] * log((1-p_proposal[j]));
-        }
-     likebit = newlikebit - oldlikebit;
+    for(int j = 0; j < nsites; j++)     
+    {
+      p_current[j] = exp(lp_current[j]) / (1 + exp(lp_current[j]));
+      p_proposal[j] = exp(lp_proposal[j]) / (1 + exp(lp_proposal[j]));
+      oldlikebit = oldlikebit +  y[j] * log(p_current[j]) + failures[j] * log((1-p_current[j]));
+      newlikebit = newlikebit +  y[j] * log(p_proposal[j]) + failures[j] * log((1-p_proposal[j]));
+    }
+    likebit = newlikebit - oldlikebit;
     
-        for(int g = 0; g < p; g++)     
-        {
-        priorbit = priorbit + 0.5 * pow((beta[g]-prior_meanbeta[g]),2) / prior_varbeta[g] - 0.5 * pow((beta_new[g]-prior_meanbeta[g]),2) / prior_varbeta[g];
-        }
+    priorbit = 0;
+    for(int g = 0; g < len; g++)     
+    {
+      priorbit = priorbit + 0.5 * pow((beta_old[idx[g]]-prior_meanbeta[idx[g]]),2) / prior_varbeta[idx[g]] - 0.5 * pow((beta_new[idx[g]]-prior_meanbeta[idx[g]]),2) / prior_varbeta[idx[g]];
+    }
     
-        
-    // Accept or reject the proposal      
+    
+    // Accept or reject hte proposal      
     acceptance = exp(likebit + priorbit);
-        if(runif(1)[0] <= acceptance) 
-        {
-            out[0] = beta_new;
-            out[1] = 1;
-        }
-        else
-        { 
-            out[0] = beta;
-            out[1] = 0; 
-        }
-        
-        
-        // Compute the acceptance probability and return the value
-        return out;    
+    if(runif(1)[0] <= acceptance) 
+    {
+      for(int g=0; g<len; g++)
+      {
+        beta_old[idx[g]] = beta_new[idx[g]];  
+      }
+      accept = accept + 1;
+    }
+    else
+    { 
+      for(int g=0; g<len; g++)
+      {
+        beta_new[idx[g]] = beta_old[idx[g]];  
+      }   
+    }
+  }
+  
+  
+  // Compute the acceptance probability and return the value
+  List out(2);
+  out[0] = beta_new;
+  out[1] = accept;
+  return out;    
 }
+
+
+
 
 
 
@@ -726,63 +748,83 @@ List poissonbetaupdateMALA(NumericMatrix X, const int nsites, const int p, Numer
 
 // [[Rcpp::export]]
 List poissonbetaupdateRW(NumericMatrix X, const int nsites, const int p, NumericVector beta, 
-                           NumericVector offset, NumericVector y, NumericVector prior_meanbeta, 
-                           NumericVector prior_varbeta, double beta_tune)
+                         NumericVector offset, NumericVector y, NumericVector prior_meanbeta, 
+                         NumericVector prior_varbeta, const int nblock, double beta_tune, 
+                         List block_list)
 {
-    // Compute the acceptance probability for beta
-    //Create new objects
-    double oldlikebit=0, newlikebit=0, likebit, priorbit=0;
-    double acceptance;
-    NumericVector lp_current(nsites), lp_proposal(nsites);
-    List out(2);
+  // Compute the acceptance probability for beta
+  //Create new objects
+  int accept=0;
+  double oldlikebit=0, newlikebit=0, likebit, priorbit=0;
+  double acceptance;
+  NumericVector lp_current(nsites), lp_proposal(nsites);
+  
+  // Create two beta vectors
+  NumericVector beta_old(p);
+  NumericVector beta_new(p);
+  for(int g=0; g<p; g++)
+  {
+    beta_old[g] = beta[g];
+    beta_new[g] = beta[g];
+  }
+  
+  // Update each block in turn
+  for(int r=0; r<nblock; r++)
+  {
+    // Determine the block to update
+    IntegerVector idx = block_list[r];
+    int len = block_list[(nblock+r)];
     
-    // Create a beta new vector
-    NumericVector beta_new(p);
-        for(int g = 0; g < p; g++)
-        {
-        beta_new[g] = beta[g];
-        }
-    
-    
-    // Update the parameters in one go as p is less than 3
     // Propose a value
-        for(int g = 0; g < p; g++)
-        {
-        beta_new[g] = rnorm(1, beta[g], beta_tune)[0];
-        }
-        
-    // Compute the acceptance ratio - full conditionals   
-    lp_current = linpredcompute(X, nsites, p, beta, offset);
-    lp_proposal = linpredcompute(X, nsites, p, beta_new, offset);     
-        for(int j = 0; j < nsites; j++)     
-        {
-        oldlikebit = oldlikebit + y[j] * lp_current[j] - exp(lp_current[j]);
-        newlikebit = newlikebit + y[j] * lp_proposal[j] - exp(lp_proposal[j]);
-        }
-    likebit = newlikebit - oldlikebit;
-        
-        for(int g = 0; g < p; g++)     
-        {
-        priorbit = priorbit + 0.5 * pow((beta[g]-prior_meanbeta[g]),2) / prior_varbeta[g] - 0.5 * pow((beta_new[g]-prior_meanbeta[g]),2) / prior_varbeta[g];
-        }
-        
-
-    // Accept or reject the proposal      
-    acceptance = exp(likebit + priorbit);
-        if(runif(1)[0] <= acceptance) 
-        {
-        out[0] = beta_new;
-        out[1] = 1;
-        }
-        else
-        { 
-        out[0] = beta;
-        out[1] = 0; 
-        }
-
+    for(int g=0; g<len; g++)
+    {
+      beta_new[idx[g]] = rnorm(1, beta_old[g], beta_tune)[0];
+    }
     
-    // Compute the acceptance probability and return the value
-    return out;    
+    
+    // Compute the acceptance ratio - likelihood part
+    lp_current = linpredcompute(X, nsites, p, beta_old, offset);
+    lp_proposal = linpredcompute(X, nsites, p, beta_new, offset);     
+    oldlikebit = 0;
+    newlikebit=0;
+    for(int j = 0; j < nsites; j++)     
+    {
+      oldlikebit = oldlikebit + y[j] * lp_current[j] - exp(lp_current[j]);
+      newlikebit = newlikebit + y[j] * lp_proposal[j] - exp(lp_proposal[j]);
+    }
+    likebit = newlikebit - oldlikebit;
+    
+    // Compute the acceptance ratio - prior part
+    priorbit = 0;
+    for(int g = 0; g < len; g++)     
+    {
+      priorbit = priorbit + 0.5 * pow((beta_old[idx[g]]-prior_meanbeta[idx[g]]),2) / prior_varbeta[idx[g]] - 0.5 * pow((beta_new[idx[g]]-prior_meanbeta[idx[g]]),2) / prior_varbeta[idx[g]];
+    }
+    
+    // Accept or reject the proposal    
+    acceptance = exp(likebit + priorbit);
+    if(runif(1)[0] <= acceptance) 
+    {
+      for(int g=0; g<len; g++)
+      {
+        beta_old[idx[g]] = beta_new[idx[g]];  
+      }
+      accept = accept + 1;
+    }
+    else
+    { 
+      for(int g=0; g<len; g++)
+      {
+        beta_new[idx[g]] = beta_old[idx[g]];  
+      }   
+    }
+  }
+  
+  // Return the value
+  List out(2);
+  out[0] = beta_new;
+  out[1] = accept;
+  return out;    
 }
 
 

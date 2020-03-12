@@ -277,12 +277,12 @@ n.islands <- max(W.islands$nc)
     Z.zero <- which(Z==0)
     offset.temp <- offset[Z.zero] + phi[Z.zero]
     
-        if(p>2)
+        if(MALA)
         {
         temp <- poissonbetaupdateMALA(X.standardised[Z.zero, ], length(Z.zero), p, beta, offset.temp, Y.DA[Z.zero], prior.mean.beta, prior.var.beta, n.beta.block, proposal.sd.beta, list.block)
         }else
         {
-        temp <- poissonbetaupdateRW(X.standardised[Z.zero, ], length(Z.zero), p, beta, offset.temp, Y.DA[Z.zero], prior.mean.beta, prior.var.beta, proposal.sd.beta)
+        temp <- poissonbetaupdateRW(X.standardised[Z.zero, ], length(Z.zero), p, beta, offset.temp, Y.DA[Z.zero], prior.mean.beta, prior.var.beta, n.beta.block, proposal.sd.beta, list.block)
         }
     beta <- temp[[1]]
     regression <- X.standardised %*% beta
@@ -357,12 +357,12 @@ n.islands <- max(W.islands$nc)
     #### Sample from delta
     ######################
     offset.temp <- offset.omega
-        if(q>2)
+        if(MALA)
         {
         temp <- binomialbetaupdateMALA(V.standardised, K, q, delta, offset.temp, Z, 1-Z, rep(1,K), prior.mean.delta, prior.var.delta, n.delta.block, proposal.sd.delta, list.block.delta)
         }else
         {
-        temp <- binomialbetaupdateRW(V.standardised, K, q, delta, offset.temp, Z, 1-Z, prior.mean.delta, prior.var.delta, proposal.sd.delta)
+        temp <- binomialbetaupdateRW(V.standardised, K, q, delta, offset.temp, Z, 1-Z, prior.mean.delta, prior.var.delta, n.delta.block, proposal.sd.delta, list.block.delta)
         }
     delta <- temp[[1]]
     accept[7] <- accept[7] + temp[[2]]

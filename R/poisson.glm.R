@@ -1,4 +1,4 @@
-poisson.glm <- function(formula, data=NULL,  burnin, n.sample, thin=1, prior.mean.beta=NULL, prior.var.beta=NULL, verbose=TRUE)
+poisson.glm <- function(formula, data=NULL,  burnin, n.sample, thin=1, prior.mean.beta=NULL, prior.var.beta=NULL, MALA=FALSE, verbose=TRUE)
 {
 ##############################################
 #### Format the arguments and check for errors
@@ -21,6 +21,11 @@ Y <- frame.results$Y
 which.miss <- frame.results$which.miss
 n.miss <- frame.results$n.miss  
 Y.DA <- Y
+
+
+#### Check on MALA argument
+if(length(MALA)!=1) stop("MALA is not length 1.", call.=FALSE)
+if(!is.logical(MALA)) stop("MALA is not logical.", call.=FALSE)  
 
 
 #### Priors
@@ -109,12 +114,12 @@ proposal.sd.beta <- 0.01
     ## Sample from beta
     ####################
     offset.temp <- offset
-        if(p>2)
+        if(MALA)
         {
         temp <- poissonbetaupdateMALA(X.standardised, K, p, beta, offset.temp, Y.DA, prior.mean.beta, prior.var.beta, n.beta.block, proposal.sd.beta, list.block)
         }else
         {
-        temp <- poissonbetaupdateRW(X.standardised, K, p, beta, offset.temp, Y.DA, prior.mean.beta, prior.var.beta, proposal.sd.beta)
+        temp <- poissonbetaupdateRW(X.standardised, K, p, beta, offset.temp, Y.DA, prior.mean.beta, prior.var.beta, n.beta.block, proposal.sd.beta, list.block)
         }
     beta <- temp[[1]]
     accept[1] <- accept[1] + temp[[2]]

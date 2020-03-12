@@ -32,7 +32,7 @@
 \usage{
     S.CARmultilevel(formula, family, data=NULL,  trials=NULL, W, ind.area, 
     ind.re=NULL, burnin, n.sample, thin=1, prior.mean.beta=NULL, prior.var.beta=NULL,
-    prior.nu2=NULL, prior.tau2=NULL, prior.sigma2=NULL, rho=NULL, 
+    prior.nu2=NULL, prior.tau2=NULL, prior.sigma2=NULL, rho=NULL, MALA=FALSE,
     verbose=TRUE)
 }
 
@@ -107,6 +107,11 @@
         fixed at if it should not be estimated. If this arugment is NULL then rho is
         estimated in the model.
         }
+        \item{MALA}{
+        Logical, should the function use Metropolis adjusted Langevin algorithm 
+        (MALA) updates (TRUE) or simple random walk (FALSE, default) updates for 
+        the regression parameters. Not applicable if family="gaussian".   
+}
         \item{verbose}{
         Logical, should the function update the user on its progress.  
         }

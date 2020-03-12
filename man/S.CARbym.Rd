@@ -103,7 +103,8 @@ Defaults to a vector with values 100000.
 }
 \item{MALA}{
 Logical, should the function use Metropolis adjusted Langevin algorithm (MALA) 
-updates (TRUE) or simple random walk (FALSE, default) updates for the random effects.
+updates (TRUE) or simple random walk (FALSE, default) updates for the regression
+    parameters and random effects.
 }
   \item{verbose}{
 Logical, should the function update the user on its progress.  

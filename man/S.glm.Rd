@@ -27,7 +27,7 @@ For a full model specification see the vignette accompanying this package.
 \usage{
 S.glm(formula, formula.omega=NULL, family, data=NULL,  trials=NULL, burnin, n.sample, 
 thin=1, prior.mean.beta=NULL, prior.var.beta=NULL, prior.nu2=NULL, 
-prior.mean.delta=NULL, prior.var.delta=NULL, verbose=TRUE)
+prior.mean.delta=NULL, prior.var.delta=NULL, MALA=FALSE, verbose=TRUE)
 }
 
 
@@ -97,7 +97,12 @@ Defaults to a vector of zeros.
 A vector of prior variances for the regression parameters delta (Gaussian priors 
 are assumed) for the zero probability logistic regression component of the model. 
 Defaults to a vector with values 100000.
-}  
+}
+\item{MALA}{
+Logical, should the function use Metropolis adjusted Langevin algorithm (MALA) 
+    updates (TRUE) or simple random walk (FALSE, default) updates for the regression 
+    parameters. Not applicable if family="gaussian" or family="multinomial".   
+}
     \item{verbose}{
 Logical, should the function update the user on its progress.  
 }

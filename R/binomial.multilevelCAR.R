@@ -1,4 +1,4 @@
-binomial.multilevelCAR <- function(formula, data=NULL, trials, W, ind.area, ind.re=NULL, burnin, n.sample, thin=1, prior.mean.beta=NULL, prior.var.beta=NULL, prior.tau2=NULL, prior.sigma2=NULL, rho=NULL, verbose=TRUE)
+binomial.multilevelCAR <- function(formula, data=NULL, trials, W, ind.area, ind.re=NULL, burnin, n.sample, thin=1, prior.mean.beta=NULL, prior.var.beta=NULL, prior.tau2=NULL, prior.sigma2=NULL, rho=NULL,  MALA=FALSE,  verbose=TRUE)
 {
 ##############################################
 #### Format the arguments and check for errors
@@ -23,6 +23,11 @@ n.miss <- frame.results$n.miss
 Y.DA <- Y
 
     
+#### Check on MALA argument
+if(length(MALA)!=1) stop("MALA is not length 1.", call.=FALSE)
+if(!is.logical(MALA)) stop("MALA is not logical.", call.=FALSE)  
+
+
 #### Check and format the trials argument
     if(sum(is.na(trials))>0) stop("the numbers of trials has missing 'NA' values.", call.=FALSE)
     if(!is.numeric(trials)) stop("the numbers of trials has non-numeric values.", call.=FALSE)
@@ -242,12 +247,12 @@ n.islands <- max(W.islands$nc)
     ## Sample from beta
     ####################
     offset.temp <- phi.extend + offset + psi.extend
-        if(p>2)
+        if(MALA)
         {
         temp <- binomialbetaupdateMALA(X.standardised, n, p, beta, offset.temp, Y.DA, failures.DA, trials, prior.mean.beta, prior.var.beta, n.beta.block, proposal.sd.beta, list.block)
         }else
         {
-        temp <- binomialbetaupdateRW(X.standardised, n, p, beta, offset.temp, Y.DA, failures.DA, prior.mean.beta, prior.var.beta, proposal.sd.beta)
+        temp <- binomialbetaupdateRW(X.standardised, n, p, beta, offset.temp, Y.DA, failures.DA, prior.mean.beta, prior.var.beta, n.beta.block, proposal.sd.beta, list.block)
         }
     beta <- temp[[1]]
     accept[1] <- accept[1] + temp[[2]]

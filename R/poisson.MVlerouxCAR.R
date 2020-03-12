@@ -212,12 +212,12 @@ Y.vec <- as.numeric(t(Y))
     offset.temp <- phi + offset
         for(r in 1:J)
         {
-            if(p>2)
+            if(MALA)
             {
             temp <- poissonbetaupdateMALA(X.standardised, K, p, beta[ ,r], offset.temp[ ,r], Y.DA[ ,r], prior.mean.beta, prior.var.beta, n.beta.block, proposal.sd.beta[r], list.block)
             }else
             {
-            temp <- poissonbetaupdateRW(X.standardised, K, p, beta[ ,r], offset.temp[ ,r], Y.DA[ ,r], prior.mean.beta, prior.var.beta, proposal.sd.beta[r])
+            temp <- poissonbetaupdateRW(X.standardised, K, p, beta[ ,r], offset.temp[ ,r], Y.DA[ ,r], prior.mean.beta, prior.var.beta, n.beta.block, proposal.sd.beta[r], list.block)
             }
         beta[ ,r] <- temp[[1]]
         accept.beta[r] <- accept.beta[r] + temp[[2]]

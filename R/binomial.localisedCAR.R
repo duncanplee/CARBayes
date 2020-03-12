@@ -187,12 +187,12 @@ W.begfin <- W.quants$W.begfin
         if(!is.null(X))
         {
         offset.temp <- phi + offset + lambda[Z]
-            if(p>2)
+            if(MALA)
             {
             temp <- binomialbetaupdateMALA(X.standardised, K, p, beta, offset.temp, Y, failures, trials, prior.mean.beta, prior.var.beta, n.beta.block, proposal.sd.beta, list.block)
             }else
             {
-            temp <- binomialbetaupdateRW(X.standardised, K, p, beta, offset.temp, Y, failures, prior.mean.beta, prior.var.beta, proposal.sd.beta)
+            temp <- binomialbetaupdateRW(X.standardised, K, p, beta, offset.temp, Y, failures, prior.mean.beta, prior.var.beta, n.beta.block, proposal.sd.beta, list.block)
             }
         beta <- temp[[1]]
         accept[7] <- accept[7] + temp[[2]]

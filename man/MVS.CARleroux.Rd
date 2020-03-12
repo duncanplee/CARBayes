@@ -109,8 +109,11 @@ estimated in the model.
 }
 \item{MALA}{
         Logical, should the function use Metropolis adjusted Langevin algorithm 
-        (MALA) updates (TRUE, default) or simple random walk (FALSE, default) updates for 
-        the random effects. Not applicable if family="gaussian" or "multinomial".   
+        (MALA) updates (TRUE) or simple random walk (FALSE, default) updates for 
+        the regression parameters and the random effects. If family="gaussian" the 
+        MALA argument only applies to the random effects as the regression parameters 
+        are Gibbs sampled. Not applicable if family="multinomial" where random walk 
+        updates are used.  
 }
 \item{verbose}{
 Logical, should the function update the user on its progress.  

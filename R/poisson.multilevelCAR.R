@@ -1,4 +1,4 @@
-poisson.multilevelCAR <- function(formula, data=NULL,  W, ind.area, ind.re=NULL, burnin, n.sample, thin=1, prior.mean.beta=NULL, prior.var.beta=NULL, prior.tau2=NULL, prior.sigma2=NULL, rho=NULL, verbose=TRUE)
+poisson.multilevelCAR <- function(formula, data=NULL,  W, ind.area, ind.re=NULL, burnin, n.sample, thin=1, prior.mean.beta=NULL, prior.var.beta=NULL, prior.tau2=NULL, prior.sigma2=NULL, rho=NULL,  MALA=FALSE, verbose=TRUE)
 {
 ##############################################
 #### Format the arguments and check for errors
@@ -23,6 +23,11 @@ n.miss <- frame.results$n.miss
 Y.DA <- Y   
 
     
+#### Check on MALA argument
+if(length(MALA)!=1) stop("MALA is not length 1.", call.=FALSE)
+if(!is.logical(MALA)) stop("MALA is not logical.", call.=FALSE)  
+
+
 #### rho
     if(is.null(rho))
     {
@@ -226,12 +231,12 @@ n.islands <- max(W.islands$nc)
     ## Sample from beta
     ####################
     offset.temp <- phi.extend + offset + psi.extend
-        if(p>2)
+        if(MALA)
         {
         temp <- poissonbetaupdateMALA(X.standardised, n, p, beta, offset.temp, Y.DA, prior.mean.beta, prior.var.beta, n.beta.block, proposal.sd.beta, list.block)
         }else
         {
-        temp <- poissonbetaupdateRW(X.standardised, n, p, beta, offset.temp, Y.DA, prior.mean.beta, prior.var.beta, proposal.sd.beta)
+        temp <- poissonbetaupdateRW(X.standardised, n, p, beta, offset.temp, Y.DA, prior.mean.beta, prior.var.beta, n.beta.block, proposal.sd.beta, list.block)
         }
     beta <- temp[[1]]
     accept[1] <- accept[1] + temp[[2]]
