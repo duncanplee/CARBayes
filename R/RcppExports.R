@@ -21,8 +21,8 @@ binomialbetaupdateMALA <- function(X, nsites, p, beta, offset, y, failures, tria
     .Call(`_CARBayes_binomialbetaupdateMALA`, X, nsites, p, beta, offset, y, failures, trials, prior_meanbeta, prior_varbeta, nblock, beta_tune, block_list)
 }
 
-binomialbetaupdateRW <- function(X, nsites, p, beta, offset, y, failures, prior_meanbeta, prior_varbeta, beta_tune) {
-    .Call(`_CARBayes_binomialbetaupdateRW`, X, nsites, p, beta, offset, y, failures, prior_meanbeta, prior_varbeta, beta_tune)
+binomialbetaupdateRW <- function(X, nsites, p, beta, offset, y, failures, prior_meanbeta, prior_varbeta, nblock, beta_tune, block_list) {
+    .Call(`_CARBayes_binomialbetaupdateRW`, X, nsites, p, beta, offset, y, failures, prior_meanbeta, prior_varbeta, nblock, beta_tune, block_list)
 }
 
 binomialindepupdateMALA <- function(nsites, theta, sigma2, y, failures, trials, theta_tune, offset) {
@@ -45,8 +45,8 @@ poissonbetaupdateMALA <- function(X, nsites, p, beta, offset, y, prior_meanbeta,
     .Call(`_CARBayes_poissonbetaupdateMALA`, X, nsites, p, beta, offset, y, prior_meanbeta, prior_varbeta, nblock, beta_tune, block_list)
 }
 
-poissonbetaupdateRW <- function(X, nsites, p, beta, offset, y, prior_meanbeta, prior_varbeta, beta_tune) {
-    .Call(`_CARBayes_poissonbetaupdateRW`, X, nsites, p, beta, offset, y, prior_meanbeta, prior_varbeta, beta_tune)
+poissonbetaupdateRW <- function(X, nsites, p, beta, offset, y, prior_meanbeta, prior_varbeta, nblock, beta_tune, block_list) {
+    .Call(`_CARBayes_poissonbetaupdateRW`, X, nsites, p, beta, offset, y, prior_meanbeta, prior_varbeta, nblock, beta_tune, block_list)
 }
 
 poissoncarupdateMALA <- function(Wtriplet, Wbegfin, Wtripletsum, nsites, phi, tau2, y, phi_tune, rho, offset) {
