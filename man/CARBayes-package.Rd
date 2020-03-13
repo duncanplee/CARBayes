@@ -27,21 +27,15 @@ of this package was supported by the Economic and Social Research Council (ESRC)
 grant RES-000-22-4256, and on-going development has been supported by the 
 Engineering and Physical Science Research Council (EPSRC) grant EP/J017442/1, ESRC 
 grant ES/K006460/1, Innovate UK / Natural Environment Research Council (NERC) 
-grant NE/N007352/1 and the TB Alliance. Version 5.1.3 has a  number of changes to 
-version 5.0, including: (i) Multinomial and ZIP data models with either no random 
-effects or random effects modelled by the Leroux CAR prior. For the multinomial 
-model the latter is an MCAR model; (ii) a ZIP data model with the BYM CAR prior;
-(iii) An MCAR model for a Gaussian  data likelihood; (iv) The use of data 
-augmentation to account for missing values in the respone variable; and (v) 
-An updated vignette using the leaflet package for interactive mapping.
+grant NE/N007352/1 and the TB Alliance.
 }
 
 \details{
 \tabular{ll}{
 Package: \tab CARBayes\cr
 Type: \tab Package\cr
-Version: \tab 5.1.3\cr
-Date: \tab 2019-12-11\cr
+Version: \tab 5.2\cr
+Date: \tab 2020-03-12\cr
 License: \tab GPL (>= 2)\cr
 }
 }
