@@ -34,8 +34,8 @@ grant NE/N007352/1 and the TB Alliance.
 \tabular{ll}{
 Package: \tab CARBayes\cr
 Type: \tab Package\cr
-Version: \tab 5.2\cr
-Date: \tab 2020-03-12\cr
+Version: \tab 5.2.1\cr
+Date: \tab 2020-10-26\cr
 License: \tab GPL (>= 2)\cr
 }
 }

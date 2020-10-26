@@ -64,7 +64,7 @@ common.accceptrates1 <- function(accept, sd, min, max)
 common.betablock <- function(p, blocksize.beta=NULL)
 {
     ## Compute the blocking structure for beta     
-    if(is.null(blocksize.beta)) blocksize.beta <- 10 
+    if(is.null(blocksize.beta)) blocksize.beta <- 5 
        
     if(blocksize.beta >= p)
     {
@@ -513,31 +513,36 @@ common.Wcheckformat <- function(W)
     
     
     #### Create the triplet form
-    W.triplet <- c(NA, NA, NA)
-    for(i in 1:n)
-    {
-        for(j in 1:n)
-        {
-            if(W[i,j]>0)
-            {
-                W.triplet <- rbind(W.triplet, c(i,j, W[i,j]))     
-            }else{}
-        }
-    }
-    W.triplet <- W.triplet[-1, ]     
+    ids <- which(W > 0, arr.ind = T)
+    W.triplet <- cbind(ids, W[ids])
+    W.triplet <- W.triplet[ ,c(2,1,3)]
+    
+    #W.triplet <- c(NA, NA, NA)
+    #for(i in 1:n)
+    #{
+    #    for(j in 1:n)
+    #    {
+    #        if(W[i,j]>0)
+    #        {
+    #            W.triplet <- rbind(W.triplet, c(i,j, W[i,j]))     
+    #        }else{}
+    #    }
+    #}
+    #W.triplet <- W.triplet[-1, ]     
     n.triplet <- nrow(W.triplet) 
     W.triplet.sum <- tapply(W.triplet[ ,3], W.triplet[ ,1], sum)
     n.neighbours <- tapply(W.triplet[ ,3], W.triplet[ ,1], length)
     
     
     #### Create the start and finish points for W updating
-    W.begfin <- array(NA, c(n, 2))     
-    temp <- 1
-    for(i in 1:n)
-    {
-        W.begfin[i, ] <- c(temp, (temp + n.neighbours[i]-1))
-        temp <- temp + n.neighbours[i]
-    }
+    W.begfin <- cbind(c(1, cumsum(n.neighbours[-n])+1), cumsum(n.neighbours))
+    #W.begfin <- array(NA, c(n, 2))     
+    #temp <- 1
+    #for(i in 1:n)
+    #{
+    #    W.begfin[i, ] <- c(temp, (temp + n.neighbours[i]-1))
+    #    temp <- temp + n.neighbours[i]
+    #}
     
     
     #### Return the critical quantities
@@ -562,50 +567,55 @@ common.Wcheckformat.disimilarity <- function(W)
     
     
     ## Ensure the W matrix is symmetric
-    Wnew <- array(0, c(n,n))
-    for(i in 1:n)
-    {
-        for(j in 1:n)
-        {
-            if(i>j)
-            {
-                temp <- W[i,j]
-                Wnew[i,j] <- temp
-                Wnew[j,i] <- temp
-            }else{}
-        }
-    }
-    W <- Wnew  
+    W <- (W + t(W)) / 2
+    #Wnew <- array(0, c(n,n))
+    #for(i in 1:n)
+    #{
+    #    for(j in 1:n)
+    #    {
+    #        if(i>j)
+    #        {
+    #            temp <- W[i,j]
+    #            Wnew[i,j] <- temp
+    #            Wnew[j,i] <- temp
+    #        }else{}
+    #    }
+    #}
+    #W <- Wnew  
     n.neighbours <- apply(W, 2, sum)
     spam.W <- as.spam(W)
 
     
     #### Create the triplet form
-    W.triplet <- c(NA, NA, NA)
-    for(i in 1:n)
-    {
-        for(j in 1:n)
-        {
-            if(W[i,j]>0)
-            {
-                W.triplet <- rbind(W.triplet, c(i,j, W[i,j]))     
-            }else{}
-        }
-    }
-    W.triplet <- W.triplet[-1, ]     
+    ids <- which(W > 0, arr.ind = T)
+    W.triplet <- cbind(ids, W[ids])
+    W.triplet <- W.triplet[ ,c(2,1,3)]
+    #W.triplet <- c(NA, NA, NA)
+    #for(i in 1:n)
+    #{
+    #    for(j in 1:n)
+    #    {
+    #        if(W[i,j]>0)
+    #        {
+    #            W.triplet <- rbind(W.triplet, c(i,j, W[i,j]))     
+    #        }else{}
+    #    }
+    #}
+    #W.triplet <- W.triplet[-1, ]     
     n.triplet <- nrow(W.triplet) 
     W.triplet.sum <- tapply(W.triplet[ ,3], W.triplet[ ,1], sum)
     n.neighbours <- tapply(W.triplet[ ,3], W.triplet[ ,1], length)
     
     
     #### Create the start and finish points for W updating
-    W.begfin <- array(NA, c(n, 2))     
-    temp <- 1
-    for(i in 1:n)
-    {
-        W.begfin[i, ] <- c(temp, (temp + n.neighbours[i]-1))
-        temp <- temp + n.neighbours[i]
-    }
+    W.begfin <- cbind(c(1, cumsum(n.neighbours[-n])+1), cumsum(n.neighbours))
+    #W.begfin <- array(NA, c(n, 2))     
+    #temp <- 1
+    #for(i in 1:n)
+    #{
+    #    W.begfin[i, ] <- c(temp, (temp + n.neighbours[i]-1))
+    #    temp <- temp + n.neighbours[i]
+    #}
     
     
     #### Return the critical quantities
