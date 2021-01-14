@@ -193,8 +193,7 @@ samples.fitted <- array(NA, c(n.keep, n))
     
     
 #### Metropolis quantities
-accept.all <- rep(0,8)
-accept <- accept.all
+accept <- rep(0,8)
 proposal.sd.beta <- 0.01
 proposal.sd.phi <- 0.1
     if(!is.null(ind.re)) proposal.sd.psi <- 0.1
@@ -369,8 +368,7 @@ n.islands <- max(W.islands$nc)
     ########################################
     ## Self tune the acceptance probabilties
     ########################################
-    k <- j/100
-        if(ceiling(k)==floor(k))
+        if(ceiling(j/100)==floor(j/100) & j < burnin)
         {
         #### Update the proposal sds
             if(p>2)
@@ -383,7 +381,6 @@ n.islands <- max(W.islands$nc)
         proposal.sd.phi <- common.accceptrates1(accept[3:4], proposal.sd.phi, 40, 50)
             if(!fix.rho) proposal.sd.rho <- common.accceptrates2(accept[5:6], proposal.sd.rho, 40, 50, 0.5)
             if(!is.null(ind.re)) proposal.sd.psi <- common.accceptrates1(accept[7:8], proposal.sd.psi, 40, 50)
-        accept.all <- accept.all + accept
         accept <- rep(0,8)
         }else
         {}
@@ -414,18 +411,18 @@ n.islands <- max(W.islands$nc)
 #### Summarise and save the results 
 ###################################
 #### Compute the acceptance rates
-accept.beta <- 100 * accept.all[1] / accept.all[2]
-accept.phi <- 100 * accept.all[3] / accept.all[4]
+accept.beta <- 100 * accept[1] / accept[2]
+accept.phi <- 100 * accept[3] / accept[4]
     if(!fix.rho)
     {
-    accept.rho <- 100 * accept.all[5] / accept.all[6]
+    accept.rho <- 100 * accept[5] / accept[6]
     }else
     {
     accept.rho <- NA    
     }
     if(!is.null(ind.re))
     {
-    accept.psi <- 100 * accept.all[7] / accept.all[8]
+    accept.psi <- 100 * accept[7] / accept[8]
     accept.sigma2 <- 100
     }else
     {

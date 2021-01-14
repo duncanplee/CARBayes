@@ -125,14 +125,13 @@ samples.fitted <- array(NA, c(n.keep, K))
     if(!is.null(X))
     {
     samples.beta <- array(NA, c(n.keep, p))
-    accept.all <- rep(0,8)
+    accept <- rep(0,8)
     proposal.sd.beta <- 0.01
     }else
     {
-    accept.all <- rep(0,6)    
+    accept <- rep(0,6)    
     }
 
-accept <- accept.all
 proposal.sd.phi <- 0.1
 proposal.sd.delta <- 0.1
 proposal.sd.lambda <- 0.01
@@ -314,8 +313,7 @@ W.begfin <- W.quants$W.begfin
      ########################################
      ## Self tune the acceptance probabilties
      ########################################
-     k <- j/100
-        if(ceiling(k)==floor(k))
+        if(ceiling(j/100)==floor(j/100) & j < burnin)
         {
             if(!is.null(X))
             {
@@ -329,14 +327,12 @@ W.begfin <- W.quants$W.begfin
             proposal.sd.phi <- common.accceptrates1(accept[1:2], proposal.sd.phi, 40, 50)
             proposal.sd.lambda <- common.accceptrates1(accept[3:4], proposal.sd.lambda, 20, 40)
             proposal.sd.delta <- common.accceptrates2(accept[5:6], proposal.sd.delta, 40, 50, prior.delta/6)
-            accept.all <- accept.all + accept
             accept <- rep(0,8)
             }else
             {
             proposal.sd.phi <- common.accceptrates1(accept[1:2], proposal.sd.phi, 40, 50)
             proposal.sd.lambda <- common.accceptrates1(accept[3:4], proposal.sd.lambda, 20, 40)
             proposal.sd.delta <- common.accceptrates2(accept[5:6], proposal.sd.delta, 40, 50, prior.delta/6)
-            accept.all <- accept.all + accept
             accept <- rep(0,6)     
             }
         }else
@@ -368,14 +364,14 @@ W.begfin <- W.quants$W.begfin
 #### Summarise and save the results 
 ###################################
 #### Compute the acceptance rates
-accept.phi <- 100 * accept.all[1] / accept.all[2]
-accept.lambda <- 100 * accept.all[3] / accept.all[4]
-accept.delta <- 100 * accept.all[5] / accept.all[6]
+accept.phi <- 100 * accept[1] / accept[2]
+accept.lambda <- 100 * accept[3] / accept[4]
+accept.delta <- 100 * accept[5] / accept[6]
 accept.tau2 <- 100
 
     if(!is.null(X))
     {
-    accept.beta <- 100 * accept.all[7] / accept.all[8]   
+    accept.beta <- 100 * accept[7] / accept[8]   
     accept.final <- c(accept.beta, accept.lambda, accept.delta, accept.phi, accept.tau2)
     names(accept.final) <- c("beta", "lambda", "delta", "phi", "tau2")   
     }else

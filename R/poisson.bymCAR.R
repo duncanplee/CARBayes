@@ -89,8 +89,7 @@ samples.fitted <- array(NA, c(n.keep, K))
 
 
 ## Metropolis quantities
-accept.all <- rep(0,6)
-accept <- accept.all
+accept <- rep(0,6)
 proposal.sd.beta <- 0.01
 proposal.sd.phi <- 0.1
 proposal.sd.theta <- 0.1
@@ -250,8 +249,7 @@ tau2.posterior.shape <- prior.tau2[1] + 0.5 * (K-n.islands)
     ########################################
     ## Self tune the acceptance probabilties
     ########################################
-    k <- j/100
-        if(ceiling(k)==floor(k))
+        if(ceiling(j/100)==floor(j/100) & j < burnin)
         {
         #### Update the proposal sds
             if(p>2)
@@ -263,7 +261,6 @@ tau2.posterior.shape <- prior.tau2[1] + 0.5 * (K-n.islands)
             }
         proposal.sd.phi <- common.accceptrates1(accept[3:4], proposal.sd.phi, 40, 50)
         proposal.sd.theta <- common.accceptrates1(accept[5:6], proposal.sd.theta, 40, 50)
-        accept.all <- accept.all + accept
         accept <- c(0,0,0,0,0,0)
         }else
         {   
@@ -295,9 +292,9 @@ tau2.posterior.shape <- prior.tau2[1] + 0.5 * (K-n.islands)
 #### Summarise and save the results 
 ###################################
 #### Compute the acceptance rates
-accept.beta <- 100 * accept.all[1] / accept.all[2]
-accept.phi <- 100 * accept.all[3] / accept.all[4]
-accept.theta <- 100 * accept.all[5] / accept.all[6]
+accept.beta <- 100 * accept[1] / accept[2]
+accept.phi <- 100 * accept[3] / accept[4]
+accept.theta <- 100 * accept[5] / accept[6]
 accept.tau2 <- 100
 accept.sigma2 <- 100
 accept.final <- c(accept.beta, accept.phi, accept.theta, accept.tau2, accept.sigma2)

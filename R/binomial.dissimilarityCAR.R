@@ -129,7 +129,6 @@ samples.fitted <- array(NA, c(n.keep, K))
 
 #### Metropolis quantities
 accept <- rep(0,6)
-accept.all <- accept
 proposal.sd.beta <- 0.01
 proposal.sd.phi <- 0.1
 proposal.sd.alpha <- 0.02 * alpha.max
@@ -335,8 +334,7 @@ det.Q <- sum(log(diag(chol.spam(Q))))
     ########################################
     ## Self tune the acceptance probabilties
     ########################################
-    k <- j/100
-        if(ceiling(k)==floor(k))
+        if(ceiling(j/100)==floor(j/100) & j < burnin)
     	{
     	#### Update the proposal sds
             if(p>2)
@@ -348,7 +346,6 @@ det.Q <- sum(log(diag(chol.spam(Q))))
             }
     	proposal.sd.phi <- common.accceptrates1(accept[3:4], proposal.sd.phi, 40, 50)
     	proposal.sd.alpha <- common.accceptrates2(accept[5:6], proposal.sd.alpha, 40, 50, alpha.max/4)
-    	accept.all <- accept.all + accept
     	accept <- c(0,0,0,0,0,0)
     	}else
     	{}   
@@ -379,9 +376,9 @@ det.Q <- sum(log(diag(chol.spam(Q))))
 #### Summarise and save the results 
 ###################################
 #### Compute the acceptance rates
-accept.beta <- 100 * accept.all[1] / accept.all[2]
-accept.phi <- 100 * accept.all[3] / accept.all[4]
-accept.alpha <- 100 * accept.all[5] / accept.all[6]
+accept.beta <- 100 * accept[1] / accept[2]
+accept.phi <- 100 * accept[3] / accept[4]
+accept.alpha <- 100 * accept[5] / accept[6]
 accept.tau2 <- 100
 accept.final <- c(accept.beta, accept.phi, accept.tau2, accept.alpha)
 names(accept.final) <- c("beta", "phi", "tau2", "alpha")          

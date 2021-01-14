@@ -107,8 +107,7 @@ samples.fitted <- array(NA, c(n.keep, N.all))
     
     
 #### Metropolis quantities
-accept.all.beta <- rep(0,2*(J-1))
-accept.beta <- accept.all.beta
+accept.beta <- rep(0,2*(J-1))
 proposal.sd.beta <- rep(0.01, (J-1))
     
     
@@ -206,8 +205,7 @@ proposal.sd.beta <- rep(0.01, (J-1))
     ########################################
     ## Self tune the acceptance probabilties
     ########################################
-    k <- j/100
-        if(ceiling(k)==floor(k))
+        if(ceiling(j/100)==floor(j/100) & j < burnin)
         {
         #### Update the proposal sds
             for(r in 1:(J-1))
@@ -220,7 +218,6 @@ proposal.sd.beta <- rep(0.01, (J-1))
                 proposal.sd.beta[r] <- common.accceptrates1(accept.beta[c(r, (r+J-1))], proposal.sd.beta[r], 30, 40)    
                 }
             }
-        accept.all.beta <- accept.all.beta + accept.beta
         accept.beta <- rep(0,2*(J-1))
         }else
         {}
@@ -250,7 +247,7 @@ proposal.sd.beta <- rep(0.01, (J-1))
 #### Summarise and save the results 
 ###################################
 #### Compute the acceptance rates
-accept.beta <- 100 * sum(accept.all.beta[1:(J-1)]) / sum(accept.all.beta[(J:(2*(J-1)))])
+accept.beta <- 100 * sum(accept.beta[1:(J-1)]) / sum(accept.beta[(J:(2*(J-1)))])
 accept.final <- accept.beta
 names(accept.final) <- c("beta")
     

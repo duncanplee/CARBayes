@@ -85,7 +85,6 @@ samples.fitted <- array(NA, c(n.keep, K))
 
 #### Metropolis quantities
 accept <- rep(0,2)
-accept.all <- accept
 proposal.sd.rho <- 0.02
 tau2.posterior.shape <- prior.tau2[1] + 0.5*K
 nu2.posterior.shape <- prior.nu2[1] + 0.5*K
@@ -271,15 +270,13 @@ data.precision.beta <- t(X.standardised) %*% X.standardised
     ########################################
     ## Self tune the acceptance probabilties
     ########################################
-    k <- j/100
-        if(ceiling(k)==floor(k))
+        if(ceiling(j/100)==floor(j/100) & j < burnin)
         {
         #### Update the proposal sds
             if(!fix.rho)
             {
             proposal.sd.rho <- common.accceptrates2(accept[1:2], proposal.sd.rho, 40, 50, 0.5)
             }
-        accept.all <- accept.all + accept
         accept <- c(0,0)
         }else
         {   
@@ -313,7 +310,7 @@ data.precision.beta <- t(X.standardised) %*% X.standardised
 #### Compute the acceptance rates
     if(!fix.rho)
     {
-    accept.rho <- 100 * accept.all[1] / accept.all[2]
+    accept.rho <- 100 * accept[1] / accept[2]
     }else
     {
     accept.rho <- NA    
