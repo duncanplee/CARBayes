@@ -67,7 +67,7 @@ Y.DA <- Y
     if(is.null(prior.mean.beta)) prior.mean.beta <- rep(0, p)
     if(is.null(prior.var.beta)) prior.var.beta <- rep(100000, p)
     if(is.null(prior.Sigma.df)) prior.Sigma.df <- J+1
-    if(is.null(prior.Sigma.scale)) prior.Sigma.scale <- diag(rep(1,J))
+    if(is.null(prior.Sigma.scale)) prior.Sigma.scale <- diag(rep(1,J)) / 1000
     if(is.null(prior.nu2)) prior.nu2 <- c(1, 0.01)
 common.prior.beta.check(prior.mean.beta, prior.var.beta, p)
 common.prior.varmat.check(prior.Sigma.scale, J)  

@@ -82,7 +82,7 @@ diffs <- apply(Y, 1, sum, na.rm=T) - trials
     if(is.null(prior.mean.beta)) prior.mean.beta <- rep(0, p)
     if(is.null(prior.var.beta)) prior.var.beta <- rep(100000, p)
     if(is.null(prior.Sigma.df)) prior.Sigma.df <- J
-    if(is.null(prior.Sigma.scale)) prior.Sigma.scale <- diag(rep(1,(J-1)))
+    if(is.null(prior.Sigma.scale)) prior.Sigma.scale <- diag(rep(1,J)) / 1000
 common.prior.beta.check(prior.mean.beta, prior.var.beta, p)
 common.prior.varmat.check(prior.Sigma.scale, J-1) 
     

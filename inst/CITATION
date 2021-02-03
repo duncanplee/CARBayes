@@ -8,12 +8,12 @@ citEntry(entry = "Article",
   volume       = "55",
   number       = "13",
   pages        = "1--24",
-  url          = "http://www.jstatsoft.org/v55/i13/",
+  url          = "https://www.jstatsoft.org/v55/i13/",
 
   textVersion  =
   paste("Duncan Lee (2013).",
         "CARBayes: An R Package for Bayesian Spatial Modeling with Conditional Autoregressive Priors.",
         "Journal of Statistical Software, 55(13), 1-24.",
-        "URL http://www.jstatsoft.org/v55/i13/.")
+        "URL https://www.jstatsoft.org/v55/i13/.")
 )
 

@@ -377,7 +377,7 @@ List binomialbetaupdateRW(NumericMatrix X, const int nsites, const int p, Numeri
     // Propose a value
     for(int g=0; g<len; g++)
     {
-      beta_new[idx[g]] = rnorm(1, beta_old[g], beta_tune)[0];
+      beta_new[idx[g]] = rnorm(1, beta_old[idx[g]], beta_tune)[0];
     }
     
     
@@ -767,8 +767,9 @@ List poissonbetaupdateRW(NumericMatrix X, const int nsites, const int p, Numeric
     beta_old[g] = beta[g];
     beta_new[g] = beta[g];
   }
+
   
-  // Update each block in turn
+// Update each block in turn
   for(int r=0; r<nblock; r++)
   {
     // Determine the block to update
@@ -778,9 +779,9 @@ List poissonbetaupdateRW(NumericMatrix X, const int nsites, const int p, Numeric
     // Propose a value
     for(int g=0; g<len; g++)
     {
-      beta_new[idx[g]] = rnorm(1, beta_old[g], beta_tune)[0];
+      beta_new[idx[g]] = rnorm(1, beta_old[idx[g]], beta_tune)[0];
     }
-    
+
     
     // Compute the acceptance ratio - likelihood part
     lp_current = linpredcompute(X, nsites, p, beta_old, offset);
@@ -794,12 +795,14 @@ List poissonbetaupdateRW(NumericMatrix X, const int nsites, const int p, Numeric
     }
     likebit = newlikebit - oldlikebit;
     
+    
     // Compute the acceptance ratio - prior part
     priorbit = 0;
     for(int g = 0; g < len; g++)     
     {
       priorbit = priorbit + 0.5 * pow((beta_old[idx[g]]-prior_meanbeta[idx[g]]),2) / prior_varbeta[idx[g]] - 0.5 * pow((beta_new[idx[g]]-prior_meanbeta[idx[g]]),2) / prior_varbeta[idx[g]];
     }
+
     
     // Accept or reject the proposal    
     acceptance = exp(likebit + priorbit);
@@ -819,7 +822,8 @@ List poissonbetaupdateRW(NumericMatrix X, const int nsites, const int p, Numeric
       }   
     }
   }
-  
+
+
   // Return the value
   List out(2);
   out[0] = beta_new;

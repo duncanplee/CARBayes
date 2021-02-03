@@ -100,7 +100,7 @@ prior for nu2. Defaults to c(1, 0.01) and only used if family="Gaussian".
 }
 \item{prior.Sigma.scale}{
     The prior J times J scale matrix for the Inverse-Wishart prior for Sigma. 
-    Defaults to the identity matrix. 
+    Defaults to the identity matrix divided by 1000.
 }
      \item{rho}{
 The value in the interval [0, 1] that the spatial dependence parameter rho is 

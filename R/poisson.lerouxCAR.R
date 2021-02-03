@@ -186,9 +186,9 @@ n.islands <- max(W.islands$nc)
     regression <- X.standardised %*% beta
     accept[1] <- accept[1] + temp[[2]]
     accept[2] <- accept[2] + n.beta.block  
- 
-        
-        
+
+
+
     ####################
     ## Sample from phi
     ####################
@@ -299,7 +299,7 @@ n.islands <- max(W.islands$nc)
         {   
         }
 
-        
+    
     ################################       
     ## print progress to the console
     ################################

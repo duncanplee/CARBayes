@@ -31,9 +31,9 @@ if(!is.logical(MALA)) stop("MALA is not logical.", call.=FALSE)
 #### Frame object for the omega model
 ## Create the matrix
 frame.omega <- try(suppressWarnings(model.frame(formula.omega, data=data, na.action=na.pass)), silent=TRUE)
-    if(class(frame.omega)=="try-error") stop("the formula.omega inputted contains an error.", call.=FALSE)
+    if(class(frame.omega)[1]=="try-error") stop("the formula.omega inputted contains an error.", call.=FALSE)
 V <- try(suppressWarnings(model.matrix(object=attr(frame.omega, "terms"), data=frame.omega)), silent=TRUE)
-    if(class(V)=="try-error") stop("the covariate matrix for the zero probabilities contains inappropriate values.", call.=FALSE)
+    if(class(V)[1]=="try-error") stop("the covariate matrix for the zero probabilities contains inappropriate values.", call.=FALSE)
     if(sum(is.na(V))>0) stop("the covariate matrix for the zero probabilities contains missing 'NA' values.", call.=FALSE)
     if(nrow(V)!=nrow(X)) stop("the two matrices of covariates don't have the same length.", call.=FALSE)
 q <- ncol(V)
@@ -72,7 +72,7 @@ V.indicator <- rep(NA, q)       # To determine which parameter estimates to tran
 
 ## Check for an offset term
 offset.omega <- try(model.offset(frame.omega), silent=TRUE)
-if(class(offset.omega)=="try-error")   stop("the offset for the probability of being a zero is not numeric.", call.=FALSE)
+if(class(offset.omega)[1]=="try-error")   stop("the offset for the probability of being a zero is not numeric.", call.=FALSE)
 if(is.null(offset.omega))  offset.omega <- rep(0,K)
 if(sum(is.na(offset.omega))>0) stop("the offset for the probability of being a zero has missing 'NA' values.", call.=FALSE)
 if(!is.numeric(offset.omega)) stop("the offset for the probability of being a zero variable has non-numeric values.", call.=FALSE)

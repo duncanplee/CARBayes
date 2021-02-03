@@ -26,7 +26,7 @@ MVS.CARleroux <- function(formula, family, data=NULL,  trials=NULL, W, burnin, n
         
     }else
     {
-        stop("the family arugment is not one of `binomial' or `poisson'.", call.=FALSE)     
+        stop("the family arugment is not one of `binomial', `Gaussian', `multinomial' or `poisson'.", call.=FALSE)     
     }
     return(model)     
 }
