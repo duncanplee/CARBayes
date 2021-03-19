@@ -133,3 +133,7 @@ gaussiancarmultilevelupdateindiv <- function(ind_re_list, n_re, q, psi, sigma2, 
     .Call(`_CARBayes_gaussiancarmultilevelupdateindiv`, ind_re_list, n_re, q, psi, sigma2, nu2, offset)
 }
 
+optimise_graph <- function(adj, data, add = FALSE, remove = TRUE, remove_first = FALSE) {
+    .Call(`_CARBayes_optimise_graph`, adj, data, add, remove, remove_first)
+}
+
