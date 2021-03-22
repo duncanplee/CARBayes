@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.24)  3 FEB 2021 05:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.24)  22 MAR 2021 13:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,7 +6,7 @@ entering extended mode
 (./CARBayes.tex
 LaTeX2e <2018-12-01>
 (/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/jss.cls
-Document Class: jss 2015/09/01 3.0 jss class by Achim Zeileis
+Document Class: jss 2020/12/09 3.2 jss class by Achim Zeileis
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/size11.clo
@@ -250,6 +250,41 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 ))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
 (/usr/local/texlive/2019/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip43
@@ -379,11 +414,11 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 
 
 Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 446.
+(hyperref)                setting the option has no effect on input line 447.
 
-Package hyperref Info: Option `colorlinks' set `true' on input line 446.
-Package hyperref Info: Option `linktocpage' set `true' on input line 446.
-Package hyperref Info: Option `plainpages' set `false' on input line 446.
+Package hyperref Info: Option `colorlinks' set `true' on input line 447.
+Package hyperref Info: Option `linktocpage' set `true' on input line 447.
+Package hyperref Info: Option `plainpages' set `false' on input line 447.
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
@@ -438,7 +473,11 @@ File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    ... okay on input line 57.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
 LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 57.
 
+(/usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count102
@@ -488,11 +527,39 @@ LaTeX Info: Redefining \nameref on input line 57.
 \@outlinefile=\write4
 \openout4 = `CARBayes.out'.
 
-LaTeX Font Info:    Try loading font information for T1+aess on input line 57.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 57.
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/ae/t1aess.fd
-File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmss.fd
+File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 57.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 57.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 57.
+
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 57.
+
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 57.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 57.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 57.
 LaTeX Font Info:    Try loading font information for U+msa on input line 57.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -506,29 +573,29 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (./CARBayes-concordance.tex) [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Font shape `T1/aer/b/sl' in size <10.95> not available
-(Font)              Font shape `T1/aer/bx/sl' tried instead on input line 86.
-
 Overfull \hbox (5.47499pt too wide) has occurred while \output is active
-\T1/aer/m/n/10.95 2 []
+\T1/lmr/m/n/10.95 2 []
  []
 
 [2]
-LaTeX Font Info:    Try loading font information for T1+aett on input line 89.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/ae/t1aett.fd
-File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 89.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for TS1+aer on input line 102.
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 99.
 
 
-(/Library/Frameworks/R.framework/Resources/share/texmf/tex/latex/ts1aer.fd
-File: ts1aer.fd 
+(/usr/local/texlive/2019/texmf-dist/tex/latex/lm/ot1lmss.fd
+File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Font shape `TS1/aer/m/n' in size <10.95> not available
-(Font)              Font shape `TS1/cmr/m/n' tried instead on input line 102.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 102.
 
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
 Overfull \hbox (5.47499pt too wide) has occurred while \output is active
-[] \T1/aer/m/n/10.95 3
+[] \T1/lmr/m/n/10.95 3
  []
 
 [3]
@@ -538,7 +605,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
 
 Overfull \hbox (5.47499pt too wide) has occurred while \output is active
-\T1/aer/m/n/10.95 4 []
+\T1/lmr/m/n/10.95 4 []
  []
 
 [4]
@@ -548,7 +615,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
 
 Overfull \hbox (5.47499pt too wide) has occurred while \output is active
-[] \T1/aer/m/n/10.95 5
+[] \T1/lmr/m/n/10.95 5
  []
 
 [5]
@@ -558,7 +625,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 177--178
 
 
 Overfull \hbox (5.47499pt too wide) has occurred while \output is active
-\T1/aer/m/n/10.95 6 []
+\T1/lmr/m/n/10.95 6 []
  []
 
 [6]
@@ -568,7 +635,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 199--200
 
 
 Overfull \hbox (5.47499pt too wide) has occurred while \output is active
-[] \T1/aer/m/n/10.95 7
+[] \T1/lmr/m/n/10.95 7
  []
 
 [7]
@@ -583,7 +650,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 248--249
 
 
 Overfull \hbox (5.47499pt too wide) has occurred while \output is active
-\T1/aer/m/n/10.95 8 []
+\T1/lmr/m/n/10.95 8 []
  []
 
 [8]
@@ -613,7 +680,7 @@ er (name{equation.2.9}) has been already used, duplicate ignored
 l.257 \begin{equation}
                       
 Overfull \hbox (5.47499pt too wide) has occurred while \output is active
-[] \T1/aer/m/n/10.95 9
+[] \T1/lmr/m/n/10.95 9
  []
 
 [9pdfTeX warning (ext4): destination with the same identifier (name{equation.2.
@@ -629,90 +696,90 @@ Underfull \hbox (badness 10000) in paragraph at lines 299--300
 
 
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
-\T1/aer/m/n/10.95 10 []
+\T1/lmr/m/n/10.95 10 []
  []
 
 [10]
-Overfull \hbox (24.45966pt too wide) in paragraph at lines 335--336
-[]\T1/aer/m/n/10.95 The soft-ware can fit seven mod-els: \T1/aett/m/n/10.95 S.g
-lm()\T1/aer/m/n/10.95 , \T1/aett/m/n/10.95 S.CARbym()\T1/aer/m/n/10.95 , \T1/ae
-tt/m/n/10.95 S.CARleroux()\T1/aer/m/n/10.95 , \T1/aett/m/n/10.95 S.CARdissimila
+Overfull \hbox (25.1836pt too wide) in paragraph at lines 335--336
+[]\T1/lmr/m/n/10.95 The soft-ware can fit seven mod-els: \T1/lmtt/m/n/10.95 S.g
+lm()\T1/lmr/m/n/10.95 , \T1/lmtt/m/n/10.95 S.CARbym()\T1/lmr/m/n/10.95 , \T1/lm
+tt/m/n/10.95 S.CARleroux()\T1/lmr/m/n/10.95 , \T1/lmtt/m/n/10.95 S.CARdissimila
 rity()
  []
 
 
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
-[] \T1/aer/m/n/10.95 11
+[] \T1/lmr/m/n/10.95 11
  []
 
 [11]
-Overfull \hbox (32.35724pt too wide) in paragraph at lines 340--341
-[]\T1/aett/m/n/10.95 family \T1/aer/m/n/10.95 - The like-li-hood model which mu
-st be one of \T1/aett/m/n/10.95 "binomial"\T1/aer/m/n/10.95 , \T1/aett/m/n/10.9
-5 "gaussian"\T1/aer/m/n/10.95 , \T1/aett/m/n/10.95 "multinomial"\T1/aer/m/n/10.
+Overfull \hbox (33.03032pt too wide) in paragraph at lines 340--341
+[]\T1/lmtt/m/n/10.95 family \T1/lmr/m/n/10.95 - The like-li-hood model which mu
+st be one of \T1/lmtt/m/n/10.95 "binomial"\T1/lmr/m/n/10.95 , \T1/lmtt/m/n/10.9
+5 "gaussian"\T1/lmr/m/n/10.95 , \T1/lmtt/m/n/10.95 "multinomial"\T1/lmr/m/n/10.
 95 ,
  []
 
 
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
-\T1/aer/m/n/10.95 12 []
+\T1/lmr/m/n/10.95 12 []
  []
 
 [12]
-Overfull \hbox (1.72365pt too wide) in paragraph at lines 377--378
-[]\T1/aett/m/n/10.95 modelfit \T1/aer/m/n/10.95 - Model fit cri-te-ria in-clud-
+Overfull \hbox (2.25026pt too wide) in paragraph at lines 377--378
+[]\T1/lmtt/m/n/10.95 modelfit \T1/lmr/m/n/10.95 - Model fit cri-te-ria in-clud-
 ing the De-viance In-for-ma-tion Cri-te-rion (DIC, [][]Spiegel-
  []
 
 
-Overfull \hbox (16.98924pt too wide) in paragraph at lines 381--382
-[]\T1/aett/m/n/10.95 localised.structure \T1/aer/m/n/10.95 - This el-e-ment is 
-\T1/aett/m/n/10.95 NULL \T1/aer/m/n/10.95 ex-cept for the mod-els \T1/aett/m/n/
+Overfull \hbox (17.66985pt too wide) in paragraph at lines 381--382
+[]\T1/lmtt/m/n/10.95 localised.structure \T1/lmr/m/n/10.95 - This el-e-ment is 
+\T1/lmtt/m/n/10.95 NULL \T1/lmr/m/n/10.95 ex-cept for the mod-els \T1/lmtt/m/n/
 10.95 S.CARdissimilarity()
  []
 
 
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
-[] \T1/aer/m/n/10.95 13
+[] \T1/lmr/m/n/10.95 13
  []
 
 [13]
-Overfull \hbox (1.80229pt too wide) in paragraph at lines 422--423
-\T1/aer/m/n/10.95 the sec-ond line of the above code. The \T1/aett/m/n/10.95 da
-ta.combined \T1/aer/m/n/10.95 ob-ject is a \T1/aett/m/n/10.95 SpatialPolygonsDa
+Overfull \hbox (2.14891pt too wide) in paragraph at lines 422--423
+\T1/lmr/m/n/10.95 the sec-ond line of the above code. The \T1/lmtt/m/n/10.95 da
+ta.combined \T1/lmr/m/n/10.95 ob-ject is a \T1/lmtt/m/n/10.95 SpatialPolygonsDa
 taFrame
  []
 
 
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
-\T1/aer/m/n/10.95 14 []
+\T1/lmr/m/n/10.95 14 []
  []
 
 [14]
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
-[] \T1/aer/m/n/10.95 15
+[] \T1/lmr/m/n/10.95 15
  []
 
 [15]
-<scatterplot.png, id=374, 1416.29124pt x 981.6675pt>
+<scatterplot.png, id=378, 1416.29124pt x 981.6675pt>
 File: scatterplot.png Graphic file (type png)
 <use scatterplot.png>
 Package pdftex.def Info: scatterplot.png  used on input line 495.
 (pdftex.def)             Requested size: 354.12434pt x 245.44623pt.
 
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
-\T1/aer/m/n/10.95 16 []
+\T1/lmr/m/n/10.95 16 []
  []
 
 [16]
-<map1.png, id=382, 1302.8675pt x 1062.97125pt>
+<map1.png, id=386, 1302.8675pt x 1062.97125pt>
 File: map1.png Graphic file (type png)
 <use map1.png>
 Package pdftex.def Info: map1.png  used on input line 541.
 (pdftex.def)             Requested size: 354.12434pt x 288.91998pt.
 
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
-[] \T1/aer/m/n/10.95 17
+[] \T1/lmr/m/n/10.95 17
  []
 
 [17 <./scatterplot.png>]
@@ -720,97 +787,97 @@ Underfull \vbox (badness 1331) has occurred while \output is active []
 
 
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
-\T1/aer/m/n/10.95 18 []
+\T1/lmr/m/n/10.95 18 []
  []
 
 [18 <./map1.png>]
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
-[] \T1/aer/m/n/10.95 19
+[] \T1/lmr/m/n/10.95 19
  []
 
 [19]
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
-\T1/aer/m/n/10.95 20 []
+\T1/lmr/m/n/10.95 20 []
  []
 
 [20]
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
-[] \T1/aer/m/n/10.95 21
+[] \T1/lmr/m/n/10.95 21
  []
 
 [21]
-<priceMCMC.png, id=422, 1304.875pt x 882.29625pt>
+<priceMCMC.png, id=427, 1304.875pt x 882.29625pt>
 File: priceMCMC.png Graphic file (type png)
 <use priceMCMC.png>
 Package pdftex.def Info: priceMCMC.png  used on input line 721.
 (pdftex.def)             Requested size: 354.12434pt x 239.43481pt.
 
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
-\T1/aer/m/n/10.95 22 []
+\T1/lmr/m/n/10.95 22 []
  []
 
 [22 <./priceMCMC.png>]
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
-[] \T1/aer/m/n/10.95 23
+[] \T1/lmr/m/n/10.95 23
  []
 
 [23]
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
-\T1/aer/m/n/10.95 24 []
+\T1/lmr/m/n/10.95 24 []
  []
 
 [24]
-<map2.png, id=449, 989.6975pt x 682.55pt>
+<map2.png, id=454, 989.6975pt x 682.55pt>
 File: map2.png Graphic file (type png)
 <use map2.png>
 Package pdftex.def Info: map2.png  used on input line 854.
 (pdftex.def)             Requested size: 354.12434pt x 244.21808pt.
 
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
-[] \T1/aer/m/n/10.95 25
+[] \T1/lmr/m/n/10.95 25
  []
 
 [25 <./map2.png>]
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
-\T1/aer/m/n/10.95 26 []
+\T1/lmr/m/n/10.95 26 []
  []
 
 [26]
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
-[] \T1/aer/m/n/10.95 27
+[] \T1/lmr/m/n/10.95 27
  []
 
 [27]
-<map3.png, id=474, 1356.06625pt x 682.55pt>
+<map3.png, id=479, 1356.06625pt x 682.55pt>
 File: map3.png Graphic file (type png)
 <use map3.png>
 Package pdftex.def Info: map3.png  used on input line 966.
 (pdftex.def)             Requested size: 354.12434pt x 178.23993pt.
 
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
-\T1/aer/m/n/10.95 28 []
+\T1/lmr/m/n/10.95 28 []
  []
 
 [28 <./map3.png>] (./CARBayes.bbl
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
-[] \T1/aer/m/n/10.95 29
+[] \T1/lmr/m/n/10.95 29
  []
 
 [29]
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
-\T1/aer/m/n/10.95 30 []
+\T1/lmr/m/n/10.95 30 []
  []
 
 [30])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 983.
 
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
-[] \T1/aer/m/n/10.95 31
+[] \T1/lmr/m/n/10.95 31
  []
 
 [31]
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
-\T1/aer/m/n/10.95 32 []
+\T1/lmr/m/n/10.95 32 []
  []
 
 [32]
@@ -823,39 +890,40 @@ Package rerunfilecheck Info: File `CARBayes.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 983.
  ) 
 Here is how much of TeX's memory you used:
- 7515 strings out of 492616
- 110155 string characters out of 6129481
- 197697 words of memory out of 5000000
- 11125 multiletter control sequences out of 15000+600000
- 58128 words of font info for 113 fonts, out of 8000000 for 9000
+ 7629 strings out of 492616
+ 113938 string characters out of 6129481
+ 197834 words of memory out of 5000000
+ 11258 multiletter control sequences out of 15000+600000
+ 112194 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  35i,12n,34p,1426b,473s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb><
-/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></
-usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></u
-sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb></
-usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
-local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
-cal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/lo
-cal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
-exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/te
-xlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsltt10.pfb></usr/local/t
-exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/te
-xlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/t
-exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
-ive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texli
-ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texliv
-e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive
-/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on CARBayes.pdf (32 pages, 2901972 bytes).
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/
+texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/t
+exmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-dist/
+fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/
+dvips/lm/lm-ts1.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-m
+athsy.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmb10.pfb><
+/usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbo10.pfb></usr/local
+/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2
+019/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2019/texmf-
+dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts
+/type1/public/lm/lmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/pub
+lic/lm/lmmi6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi
+8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></u
+sr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/te
+xlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2019/t
+exmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2019/texmf-dist/
+fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type
+1/public/lm/lmro10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/l
+m/lmss10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmssbx10
+.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr
+/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texl
+ive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2019/t
+exmf-dist/fonts/type1/public/lm/lmtto10.pfb>
+Output written on CARBayes.pdf (32 pages, 3006276 bytes).
 PDF statistics:
- 619 PDF objects out of 1000 (max. 8388607)
- 547 compressed objects within 6 object streams
+ 631 PDF objects out of 1000 (max. 8388607)
+ 560 compressed objects within 6 object streams
  137 named destinations out of 1000 (max. 500000)
  206 words of extra memory for PDF output out of 10000 (max. 10000000)
 

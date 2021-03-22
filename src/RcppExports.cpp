@@ -662,21 +662,6 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
-// optimise_graph
-std::vector<std::vector<int>> optimise_graph(const IntegerMatrix& adj, const NumericVector& data, bool add, bool remove, bool remove_first);
-RcppExport SEXP _CARBayes_optimise_graph(SEXP adjSEXP, SEXP dataSEXP, SEXP addSEXP, SEXP removeSEXP, SEXP remove_firstSEXP) {
-BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
-    Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< const IntegerMatrix& >::type adj(adjSEXP);
-    Rcpp::traits::input_parameter< const NumericVector& >::type data(dataSEXP);
-    Rcpp::traits::input_parameter< bool >::type add(addSEXP);
-    Rcpp::traits::input_parameter< bool >::type remove(removeSEXP);
-    Rcpp::traits::input_parameter< bool >::type remove_first(remove_firstSEXP);
-    rcpp_result_gen = Rcpp::wrap(optimise_graph(adj, data, add, remove, remove_first));
-    return rcpp_result_gen;
-END_RCPP
-}
 
 static const R_CallMethodDef CallEntries[] = {
     {"_CARBayes_linpredcompute", (DL_FUNC) &_CARBayes_linpredcompute, 5},
@@ -712,7 +697,6 @@ static const R_CallMethodDef CallEntries[] = {
     {"_CARBayes_poissoncarmultilevelupdateindiv", (DL_FUNC) &_CARBayes_poissoncarmultilevelupdateindiv, 8},
     {"_CARBayes_binomialcarmultilevelupdateindiv", (DL_FUNC) &_CARBayes_binomialcarmultilevelupdateindiv, 9},
     {"_CARBayes_gaussiancarmultilevelupdateindiv", (DL_FUNC) &_CARBayes_gaussiancarmultilevelupdateindiv, 7},
-    {"_CARBayes_optimise_graph", (DL_FUNC) &_CARBayes_optimise_graph, 5},
     {NULL, NULL, 0}
 };
 

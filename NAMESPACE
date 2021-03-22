@@ -10,8 +10,7 @@ export(
 	 S.CARmultilevel,
 	 S.glm,
      summarise.lincomb,
-     summarise.samples,
-     W.optimise
+     summarise.samples
      )
 S3method(print, CARBayes)
 S3method(fitted, CARBayes)
