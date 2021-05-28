@@ -471,8 +471,6 @@ common.prior.varmat.check <- function(prior.varmat, J)
     if(ncol(prior.varmat)!=J) stop("prior.Sigma.scale is the wrong dimension.", call.=FALSE)    
     if(!is.numeric(prior.varmat)) stop("prior.Sigma.scale has non-numeric values.", call.=FALSE)    
     if(sum(is.na(prior.varmat))!=0) stop("prior.Sigma.scale has missing values.", call.=FALSE)    
-    if(!is.positive.definite(prior.varmat)) stop("prior.Sigma.scale is not a positive definite matrix.", call.=FALSE)
-    if(!is.symmetric.matrix(prior.varmat)) stop("prior.Sigma.scale is not symmetric.", call.=FALSE)
 }
 
 
