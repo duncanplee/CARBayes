@@ -29,6 +29,11 @@ frame.omega <- try(suppressWarnings(model.frame(formula.omega, data=data, na.act
     if(class(frame.omega)[1]=="try-error") stop("the formula.omega inputted contains an error.", call.=FALSE)
 V <- try(suppressWarnings(model.matrix(object=attr(frame.omega, "terms"), data=frame.omega)), silent=TRUE)
     if(class(V)[1]=="try-error") stop("the covariate matrix for the zero probabilities contains inappropriate values.", call.=FALSE)
+    if(length(V)==0)
+    {
+    V <- matrix(rep(1, K), nrow=K, ncol=1, byrow=FALSE)    
+    }else
+    {}
     if(sum(is.na(V))>0) stop("the covariate matrix for the zero probabilities contains missing 'NA' values.", call.=FALSE)
     if(nrow(V)!=nrow(X)) stop("the two matrices of covariates don't have the same length.", call.=FALSE)
 q <- ncol(V)
@@ -165,7 +170,7 @@ delta.sd <- sqrt(diag(summary(mod.glm2)$cov.scaled))
 delta <- rnorm(n=length(delta.mean), mean=delta.mean, sd=delta.sd)
 
 omega <- exp(V.standardised %*% delta+offset.omega) / (1+exp(V.standardised %*% delta+offset.omega))
-prob.pointmass <- omega[which.zero] / (omega[which.zero]+(1-omega[which.zero])*exp(-exp(X.standardised[which.zero, ] %*% beta + offset[which.zero])))
+prob.pointmass <- omega[which.zero] / (omega[which.zero]+(1-omega[which.zero])*exp(-exp(as.matrix(X.standardised[which.zero, ]) %*% beta + offset[which.zero])))
 Z <-  rep(0, K)
 Z[which.zero] <- rbinom(n=n.zero, size=1, prob=prob.pointmass)    
     
@@ -264,7 +269,7 @@ n.islands <- max(W.islands$nc)
     ###################################
     #### Update Z via data augmentation
     ###################################
-    prob.pointmass <- omega[which.zero] / (omega[which.zero] + (1 - omega[which.zero]) * exp(-exp(X.standardised[which.zero, ] %*% beta + offset[which.zero] + phi[which.zero])))
+    prob.pointmass <- omega[which.zero] / (omega[which.zero] + (1 - omega[which.zero]) * exp(-exp(as.matrix(X.standardised[which.zero, ]) %*% beta + offset[which.zero] + phi[which.zero])))
     Z <-  rep(0, K)
     Z[which.zero] <- rbinom(n=n.zero, size=1, prob=prob.pointmass)    
     
@@ -278,10 +283,10 @@ n.islands <- max(W.islands$nc)
     
         if(MALA)
         {
-        temp <- poissonbetaupdateMALA(X.standardised[Z.zero, ], length(Z.zero), p, beta, offset.temp, Y.DA[Z.zero], prior.mean.beta, prior.var.beta, n.beta.block, proposal.sd.beta, list.block)
+        temp <- poissonbetaupdateMALA(as.matrix(X.standardised[Z.zero, ]), length(Z.zero), p, beta, offset.temp, Y.DA[Z.zero], prior.mean.beta, prior.var.beta, n.beta.block, proposal.sd.beta, list.block)
         }else
         {
-        temp <- poissonbetaupdateRW(X.standardised[Z.zero, ], length(Z.zero), p, beta, offset.temp, Y.DA[Z.zero], prior.mean.beta, prior.var.beta, n.beta.block, proposal.sd.beta, list.block)
+        temp <- poissonbetaupdateRW(as.matrix(X.standardised[Z.zero, ]), length(Z.zero), p, beta, offset.temp, Y.DA[Z.zero], prior.mean.beta, prior.var.beta, n.beta.block, proposal.sd.beta, list.block)
         }
     beta <- temp[[1]]
     regression <- X.standardised %*% beta

@@ -23,16 +23,16 @@
 
 %% almost as usual
 \author{Duncan Lee\\University of Glasgow }
-\title{\pkg{CARBayes} version 5.2.3: An \proglang{R} Package for Spatial Areal Unit Modelling  with Conditional Autoregressive Priors}
+\title{\pkg{CARBayes} version 5.2.4: An \proglang{R} Package for Spatial Areal Unit Modelling  with Conditional Autoregressive Priors}
 
 %% for pretty printing and a nice hypersummary also set:
 \Plainauthor{Duncan Lee} %% comma-separated
-\Plaintitle{CARBayes version 5.2.3: An R package for spatial areal unit modelling  with conditional autoregressive priors} %% without formatting
+\Plaintitle{CARBayes version 5.2.4: An R package for spatial areal unit modelling  with conditional autoregressive priors} %% without formatting
 \Shorttitle{\pkg{CARBayes}: Bayesian Conditional Autoregressive modelling} %% a short title (if necessary)
 
 %% an abstract and keywords
 \Abstract{
-This is a vignette for the \proglang{R} package \pkg{CARBayes} version 5.2.3, and is an updated version of a paper in the Journal of Statistical Software in 2013 Volume 55 Issue 13 by the same author. The package implements univariate and multivariate spatial generalised linear mixed models for areal unit data, with inference in a Bayesian setting using Markov chain Monte Carlo (MCMC) simulation. The response variable can be binomial, Gaussian, multinomial, Poisson or zero-inflated Poisson (ZIP), and spatial autocorrelation is modelled by  a set of random effects that are assigned a conditional autoregressive (CAR) prior distribution. A number of different models are available for univariate spatial data, including models with no random effects as well as random effects modelled by different types of CAR prior. Additionally, a multivariate CAR (MCAR) model for multivariate spatial data is available, as is a two-level hierarchical model for modelling data relating to individuals within areas. The initial creation of this package was supported by the Economic and Social Research Council (ESRC) grant RES-000-22-4256, and on-going development has been supported by the Engineering and Physical Science Research Council (EPSRC) grant EP/J017442/1, ESRC grant ES/K006460/1, Innovate UK / Natural Environment Research Council (NERC) grant NE/N007352/1, and the TB Alliance. 
+This is a vignette for the \proglang{R} package \pkg{CARBayes} version 5.2.4, and is an updated version of a paper in the Journal of Statistical Software in 2013 Volume 55 Issue 13 by the same author. The package implements univariate and multivariate spatial generalised linear mixed models for areal unit data, with inference in a Bayesian setting using Markov chain Monte Carlo (MCMC) simulation. The response variable can be binomial, Gaussian, multinomial, Poisson or zero-inflated Poisson (ZIP), and spatial autocorrelation is modelled by  a set of random effects that are assigned a conditional autoregressive (CAR) prior distribution. A number of different models are available for univariate spatial data, including models with no random effects as well as random effects modelled by different types of CAR prior. Additionally, a multivariate CAR (MCAR) model for multivariate spatial data is available, as is a two-level hierarchical model for modelling data relating to individuals within areas. The initial creation of this package was supported by the Economic and Social Research Council (ESRC) grant RES-000-22-4256, and on-going development has been supported by the Engineering and Physical Science Research Council (EPSRC) grant EP/J017442/1, ESRC grant ES/K006460/1, Innovate UK / Natural Environment Research Council (NERC) grant NE/N007352/1, and the TB Alliance. 
 }
 
 \Keywords{Bayesian inference, conditional autoregressive priors, \proglang{R} package \pkg{CARBayes}}
