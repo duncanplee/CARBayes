@@ -490,7 +490,7 @@ Then a spatial map of the \code{price} variable can be overlaid on an OpenStreet
 
 
 <<>>=
-library(rgdal)
+#library(rgdal)
 pricedata.sp  <- spTransform(pricedata.sp , 
                     CRS("+proj=longlat +datum=WGS84 +no_defs"))
 @
